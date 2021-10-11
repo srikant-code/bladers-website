@@ -12,7 +12,7 @@ export const Headline = ({ text, height = "2.75rem", width = "10.8rem" }) => {
         xmlns="http://www.w3.org/2000/svg">
         <text
           stroke="url(#paint0_radial)"
-          strokeWidth="6.1327"
+          strokeWidth="7.1327"
           xmlSpace="preserve"
           style={{ whiteSpace: "pre" }}
           fontFamily="Beyblade Metal Fight"
@@ -87,7 +87,7 @@ export const Headline = ({ text, height = "2.75rem", width = "10.8rem" }) => {
               result="hardAlpha"
             />
             <feOffset />
-            <feGaussianBlur stdDeviation="0.65308" />
+            <feGaussianBlur stdDeviation="0.35308" />
             <feColorMatrix
               type="matrix"
               values="0 0 0 0 0 0 0 0 0 0.88 0 0 0 0 1 0 0 0 1 0"
@@ -118,7 +118,7 @@ export const Headline = ({ text, height = "2.75rem", width = "10.8rem" }) => {
               result="hardAlpha"
             />
             <feOffset />
-            <feGaussianBlur stdDeviation="0.65308" />
+            <feGaussianBlur stdDeviation="0.35308" />
             <feColorMatrix
               type="matrix"
               values="0 0 0 0 0 0 0 0 0 0.88 0 0 0 0 1 0 0 0 1 0"
