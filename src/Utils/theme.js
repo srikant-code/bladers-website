@@ -5,12 +5,16 @@ import { ReactComponent as Developer } from "../assets/svgs/developer.svg";
 import { ReactComponent as Discord } from "../assets/svgs/discord.svg";
 import { ReactComponent as Download } from "../assets/svgs/download.svg";
 import { ReactComponent as Email } from "../assets/svgs/email.svg";
+import { ReactComponent as Facebook } from "../assets/svgs/facebook.svg";
 import { ReactComponent as Feedback } from "../assets/svgs/feedback.svg";
+import { ReactComponent as Instagram } from "../assets/svgs/instagram.svg";
+import { ReactComponent as Linkedin } from "../assets/svgs/linkedin.svg";
 import { ReactComponent as Location } from "../assets/svgs/location.svg";
 import { ReactComponent as Park } from "../assets/svgs/park.svg";
 import { ReactComponent as Phone } from "../assets/svgs/phone.svg";
 import { ReactComponent as Privacy } from "../assets/svgs/privacy.svg";
 import { ReactComponent as Video } from "../assets/svgs/video.svg";
+import { ReactComponent as BrahmosLogo } from "../assets/svgs/brahmos_logo.svg";
 import { Pxtorem } from "./Constants";
 // default theme
 
@@ -58,13 +62,12 @@ let COLORS = {
     color_4: "#7B61FF", // violet
   },
   gradient: {
-    gradient_1: `linear-gradient(231.57deg, #000000 11.82%, #005D6A 82.4%)`, // footer
-    gradient_2: `linear-gradient(231.57deg, #005D6A 11.82%, #000000 82.4%)`, // download_component
+    gradient_2: `linear-gradient(340deg, #000000 11.82%, #005D6A 82.4%)`, // footer
+    gradient_1: `linear-gradient(23deg, rgb(0, 0, 0) 11.82%, rgb(0, 93, 106) 82.4%)`, // download_component
   },
   effects: {
-    subtle_blue: {
-      background: common.text,
-      boxShadow: `0px 3px 7px rgba(0, 99, 216, 0.11)`,
+    blue_glow: {
+      boxShadow: `0px 0px 20px #00FFE0`,
     },
     bluish: {
       background: common.text,
@@ -172,118 +175,98 @@ const changeColors = (color1, color2, color3, color4) => {
   };
 };
 
+let changeColors_Variant1 = changeColors(
+  Theme.COLORS.icons.color_1,
+  null,
+  Theme.COLORS.icons.color_1,
+  null
+);
+
+let changeColors_Variant2 = changeColors(
+  Theme.COLORS.icons.color_1,
+  null,
+  Theme.COLORS.icons.color_1,
+  null
+);
+
 export let ICONS_SVG = {
+  brahmosLogo: {
+    svg: <BrahmosLogo />,
+    name: "Brahmos Logo",
+    css: changeColors_Variant1,
+    // popOverContent: <KeyShortcuts>{KEY_SHORTCUTS.back}</KeyShortcuts>,
+  },
   contact: {
     svg: <Contact />,
     name: "Contact",
-    css: changeColors(
-      null,
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1
-    ),
+    css: changeColors_Variant2,
     // popOverContent: <KeyShortcuts>{KEY_SHORTCUTS.back}</KeyShortcuts>,
   },
   developer: {
     svg: <Developer />,
     name: "Developer",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
     // popOverContent: <KeyShortcuts>{KEY_SHORTCUTS.screenshot}</KeyShortcuts>,
   },
   discord: {
     svg: <Discord />,
     name: "Discord",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
   },
   downloads: {
     svg: <Download />,
     name: "Downloads",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
   },
   email: {
     svg: <Email />,
     name: "Email",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
+  },
+  facebook: {
+    svg: <Facebook />,
+    name: "Facebook",
+    css: changeColors_Variant1,
   },
   feedback: {
     svg: <Feedback />,
     name: "Feedback",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
+  },
+  instagram: {
+    svg: <Instagram />,
+    name: "Instagram",
+    css: changeColors_Variant1,
+  },
+  linkedin: {
+    svg: <Linkedin />,
+    name: "Linkedin",
+    css: changeColors_Variant1,
   },
   location: {
     svg: <Location />,
     name: "Location",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
   },
   park: {
     svg: <Park />,
     name: "Park",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
   },
   phone: {
     svg: <Phone />,
     name: "Phone",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
   },
   privacy: {
     svg: <Privacy />,
     name: "Privacy",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
   },
   video: {
     svg: <Video />,
     name: "Video",
-    css: changeColors(
-      Theme.COLORS.icons.color_1,
-      null,
-      Theme.COLORS.icons.color_1,
-      null
-    ),
+    css: changeColors_Variant1,
   },
 };
 

@@ -4,6 +4,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: radial-gradient(1333.81% 304.03% at 21.41% 76.7%, #002823 0%, #007281 38.62%, #002621 89.34%);
+    color: white;
 }
 
 code {

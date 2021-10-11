@@ -7,7 +7,7 @@ import { FooterLinks } from "./links";
 
 const Styles = {
   footer: {
-    background: Theme.COLORS.gradient.gradient_1,
+    background: Theme.COLORS.gradient.gradient_2,
     height: Pxtorem(728),
   },
   addressLinks: {

@@ -1,6 +1,7 @@
 import Theme from "../../Utils/theme";
 
 interface Props {
+  style?: any;
   icon: {
     name: string;
     svg: JSX.Element;
@@ -16,16 +17,17 @@ interface Props {
     };
   };
 }
-const styles = {
-  icon: {
-    padding: Theme.SPACING(6),
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    cursor: "pointer",
-  },
-};
-export const Icon: React.FC<Props> = ({ icon }) => {
+export const Icon: React.FC<Props> = ({ icon, style }) => {
+  const styles = {
+    icon: {
+      padding: Theme.SPACING(6),
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      cursor: "pointer",
+      ...style,
+    },
+  };
   return (
     <span className="icon" style={styles.icon} title={icon.name}>
       {icon.svg}
