@@ -1,0 +1,37 @@
+.background {
+    background: black;
+}
+
+.icon:hover {
+    filter: drop-shadow(0px 0px 20px #00FFE0);
+    transition: all 0.3s ease-in;
+}
+
+.link:hover {
+    /* text-decoration: underline !important; */
+    color: #00FFE0 !important;
+    transition: all 0.3s ease-in;
+}
+
+.link:hover::after {
+    content: '  ->';
+    opacity: 1;
+    transition: all 0.3s ease-in;
+    margin-left: 10px;
+}
+
+.link {
+    transition: all 0.3s ease-in;
+}
+
+.link:after {
+    transition: all 0.3s ease-in;
+    content: '';
+    opacity: 0;
+    margin-left: 0px;
+}
+
+.link:hover .icon {
+    filter: drop-shadow(0px 0px 20px #00FFE0);
+    transition: all 0.3s ease-in;
+}
