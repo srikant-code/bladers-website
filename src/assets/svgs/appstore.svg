@@ -1,0 +1,247 @@
+<svg width="218" height="65" viewBox="0 0 218 65" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M209.661 63.2422H8.42676C4.34863 63.2422 1.04395 59.9375 1.04395 55.8633V8.1875C1.04395 4.11328 4.34863 0.804688 8.42676 0.804688H209.661C213.739 0.804688 217.044 4.11328 217.044 8.1875V55.8633C217.044 59.9375 213.739 63.2422 209.661 63.2422Z" fill="black"/>
+<path d="M8.42285 1.61328C4.79785 1.61328 1.84863 4.5625 1.84863 8.1875V55.8633C1.84863 59.4883 4.79785 62.4336 8.42285 62.4336H209.661C213.286 62.4336 216.235 59.4883 216.235 55.8633V8.1875C216.235 4.5625 213.286 1.61328 209.661 1.61328H8.42285ZM209.661 64.0508H8.42285C3.90723 64.0508 0.235352 60.3789 0.235352 55.8633V8.1875C0.235352 3.67188 3.90723 0 8.42285 0H209.661C214.177 0 217.849 3.67188 217.849 8.1875V55.8633C217.849 60.3789 214.177 64.0508 209.661 64.0508Z" fill="#24FFFF"/>
+<path d="M172.419 48.293H175.419V28.1875H172.419V48.293ZM199.45 35.4297L196.009 44.1484H195.907L192.337 35.4297H189.103L194.458 47.6133L191.403 54.3906H194.536L202.786 35.4297H199.45ZM182.427 46.0078C181.446 46.0078 180.075 45.5195 180.075 44.3008C180.075 42.75 181.782 42.1562 183.255 42.1562C184.575 42.1562 185.196 42.4414 185.997 42.8281C185.763 44.6914 184.161 46.0078 182.427 46.0078ZM182.79 34.9922C180.618 34.9922 178.368 35.9492 177.435 38.0703L180.099 39.1797C180.669 38.0703 181.728 37.707 182.841 37.707C184.396 37.707 185.97 38.6367 185.997 40.293V40.5C185.454 40.1914 184.29 39.7227 182.868 39.7227C179.997 39.7227 177.075 41.3008 177.075 44.25C177.075 46.9414 179.427 48.6758 182.067 48.6758C184.083 48.6758 185.196 47.7695 185.896 46.707H185.997V48.2617H188.896V40.5508C188.896 36.9844 186.231 34.9922 182.79 34.9922ZM164.243 37.8789H159.974V30.9844H164.243C166.489 30.9844 167.759 32.8438 167.759 34.4297C167.759 35.9922 166.489 37.8789 164.243 37.8789ZM164.165 28.1875H156.974V48.293H159.974V40.6758H164.165C167.493 40.6758 170.763 38.2656 170.763 34.4297C170.763 30.5938 167.493 28.1875 164.165 28.1875ZM124.954 46.0117C122.88 46.0117 121.142 44.2773 121.142 41.8945C121.142 39.4844 122.88 37.7227 124.954 37.7227C127.001 37.7227 128.606 39.4844 128.606 41.8945C128.606 44.2773 127.001 46.0117 124.954 46.0117ZM128.396 36.5547H128.294C127.622 35.7539 126.325 35.0273 124.692 35.0273C121.271 35.0273 118.138 38.0352 118.138 41.8945C118.138 45.7305 121.271 48.7109 124.692 48.7109C126.325 48.7109 127.622 47.9844 128.294 47.1562H128.396V48.1367C128.396 50.7539 127.001 52.1562 124.743 52.1562C122.903 52.1562 121.763 50.832 121.298 49.7188L118.681 50.8086C119.431 52.6211 121.427 54.8477 124.743 54.8477C128.267 54.8477 131.247 52.7773 131.247 47.7227V35.4414H128.396V36.5547ZM133.321 48.293H136.329V28.1875H133.321V48.293ZM140.759 41.6602C140.681 39.0156 142.806 37.6719 144.333 37.6719C145.524 37.6719 146.536 38.2656 146.872 39.1211L140.759 41.6602ZM150.087 39.3789C149.517 37.8516 147.782 35.0273 144.228 35.0273C140.708 35.0273 137.778 37.8008 137.778 41.8672C137.778 45.7031 140.681 48.7109 144.567 48.7109C147.704 48.7109 149.517 46.793 150.267 45.6758L147.935 44.1211C147.157 45.2617 146.095 46.0117 144.567 46.0117C143.04 46.0117 141.95 45.3164 141.251 43.9414L150.396 40.1602L150.087 39.3789ZM77.2119 37.125V40.0273H84.1572C83.9502 41.6602 83.4072 42.8516 82.5752 43.6797C81.5674 44.6914 79.9854 45.8047 77.2119 45.8047C72.9385 45.8047 69.5947 42.3594 69.5947 38.0859C69.5947 33.8086 72.9385 30.3633 77.2119 30.3633C79.5205 30.3633 81.2041 31.2695 82.4463 32.4375L84.4932 30.3867C82.7588 28.7305 80.4541 27.4609 77.2119 27.4609C71.3564 27.4609 66.4346 32.2305 66.4346 38.0859C66.4346 43.9414 71.3564 48.7109 77.2119 48.7109C80.376 48.7109 82.7588 47.6719 84.626 45.7305C86.54 43.8125 87.1377 41.1172 87.1377 38.9414C87.1377 38.2656 87.0869 37.6445 86.9814 37.125H77.2119ZM95.0322 46.0117C92.958 46.0117 91.1729 44.3047 91.1729 41.8672C91.1729 39.4062 92.958 37.7227 95.0322 37.7227C97.1064 37.7227 98.8916 39.4062 98.8916 41.8672C98.8916 44.3047 97.1064 46.0117 95.0322 46.0117ZM95.0322 35.0273C91.2471 35.0273 88.165 37.9023 88.165 41.8672C88.165 45.8047 91.2471 48.7109 95.0322 48.7109C98.8174 48.7109 101.899 45.8047 101.899 41.8672C101.899 37.9023 98.8174 35.0273 95.0322 35.0273ZM110.013 46.0117C107.938 46.0117 106.149 44.3047 106.149 41.8672C106.149 39.4062 107.938 37.7227 110.013 37.7227C112.083 37.7227 113.872 39.4062 113.872 41.8672C113.872 44.3047 112.083 46.0117 110.013 46.0117ZM110.013 35.0273C106.228 35.0273 103.146 37.9023 103.146 41.8672C103.146 45.8047 106.228 48.7109 110.013 48.7109C113.794 48.7109 116.88 45.8047 116.88 41.8672C116.88 37.9023 113.794 35.0273 110.013 35.0273Z" fill="white"/>
+<rect width="0.1" height="0.1" transform="matrix(1 0 0 -1 37.1353 39.1509)" fill="url(#PlayStorepattern0)"/>
+<rect width="0.1" height="0.1" transform="matrix(1 0 0 -1 17.1353 52.9512)" fill="url(#PlayStorepattern1)"/>
+<rect width="0.1" height="0.1" transform="matrix(1 0 0 -1 17.1353 32.251)" fill="url(#PlayStorepattern2)"/>
+<path d="M74.1611 13.3203C73.5557 12.7852 72.7627 12.4414 71.8799 12.4414C69.9033 12.4414 68.3799 14.0742 68.3799 16.0781C68.3799 18.0859 69.9033 19.7031 71.8799 19.7031C73.583 19.7031 74.8213 18.7148 74.9033 17.1484H72.2119V16.0391H76.3564C76.3564 19.3633 74.5869 20.9258 71.8799 20.9258C69.1885 20.9258 67.1025 18.7578 67.1025 16.0781C67.1025 13.3867 69.1885 11.2148 71.8799 11.2148C73.1299 11.2148 74.2549 11.6992 75.0791 12.4648" fill="white"/>
+<path d="M83.708 11.3281V12.5195H79.3799V15.543H83.1572V16.7383H79.3799V19.5938H83.8447V20.7891H78.1025V11.3281" fill="white"/>
+<path d="M91.9893 11.3281V12.5352H89.1182V20.7891H87.8291V12.5352H84.958V11.3281" fill="white"/>
+<path d="M96.8369 20.7891H98.1143V11.3281H96.8369V20.7891Z" fill="white"/>
+<path d="M106.825 11.3281V12.5352H103.954V20.7891H102.661V12.5352H99.79V11.3281" fill="white"/>
+<path d="M115.833 19.6914C117.825 19.6914 119.349 18.0859 119.349 16.0781C119.349 14.0742 117.825 12.4531 115.833 12.4531C113.856 12.4531 112.333 14.0742 112.333 16.0781C112.333 18.0859 113.856 19.6914 115.833 19.6914ZM115.833 11.2148C118.54 11.2148 120.642 13.3867 120.642 16.0781C120.642 18.7578 118.54 20.9258 115.833 20.9258C113.142 20.9258 111.056 18.7578 111.056 16.0781C111.056 13.3867 113.142 11.2148 115.833 11.2148Z" fill="white"/>
+<path d="M128.196 20.7891L123.884 13.6641V20.7891H122.606V11.3281H123.872L128.142 18.3984V11.3281H129.419V20.7891" fill="white"/>
+<mask id="PlayStoremask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="11" width="39" height="43">
+<path d="M16.4619 13.7722V51.6833C16.4619 53.218 18.119 54.1809 19.4523 53.4209L53.3228 34.1159C54.6811 33.3416 54.6657 31.3782 53.2953 30.6254L19.4249 12.0192C18.092 11.287 16.4619 12.2514 16.4619 13.7722Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#PlayStoremask0)">
+<path d="M17.208 12.1833C16.7393 12.6755 16.4619 13.4451 16.4619 14.4412V49.9802C16.4619 50.9763 16.7393 51.7458 17.208 52.238L17.3252 52.3552L37.2354 32.4451V31.9763L17.3252 12.0662" fill="url(#PlayStorepaint0_linear)"/>
+<rect x="12.6194" y="7.69678" width="29.7552" height="35.1366" transform="rotate(-45.2173 12.6194 7.69678)" fill="#00F076"/>
+<rect x="16.2354" y="52.3555" width="29.7552" height="15.1701" transform="rotate(-45.2173 16.2354 52.3555)" fill="url(#PlayStorepaint1_linear)"/>
+<rect x="36.7932" y="31.6931" width="21.5391" height="23.1443" transform="rotate(-45.2173 36.7932 31.6931)" fill="url(#PlayStorepaint2_linear)"/>
+</g>
+<defs>
+<pattern id="PlayStorepattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.00606061 0.00724638)"/>
+</pattern>
+<pattern id="PlayStorepattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1" transform="scale(0.00371747 0.00483092)"/>
+</pattern>
+<pattern id="PlayStorepattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image2" transform="scale(0.00371747 0.00483092)"/>
+</pattern>
+<linearGradient id="PlayStorepaint0_linear" x1="30.4213" y1="45.4258" x2="14.0107" y2="36.9642" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A0FF"/>
+<stop offset="0.0625" stop-color="#00A0FF"/>
+<stop offset="0.0664063" stop-color="#00A1FF"/>
+<stop offset="0.0703125" stop-color="#00A1FF"/>
+<stop offset="0.0742188" stop-color="#00A2FF"/>
+<stop offset="0.078125" stop-color="#00A2FF"/>
+<stop offset="0.0820313" stop-color="#00A3FF"/>
+<stop offset="0.0859375" stop-color="#00A3FF"/>
+<stop offset="0.0898438" stop-color="#00A4FF"/>
+<stop offset="0.09375" stop-color="#00A4FF"/>
+<stop offset="0.0976563" stop-color="#00A5FF"/>
+<stop offset="0.101563" stop-color="#00A5FF"/>
+<stop offset="0.105469" stop-color="#00A6FF"/>
+<stop offset="0.109375" stop-color="#00A6FF"/>
+<stop offset="0.113281" stop-color="#00A7FF"/>
+<stop offset="0.117188" stop-color="#00A7FF"/>
+<stop offset="0.121094" stop-color="#00A8FF"/>
+<stop offset="0.125" stop-color="#00A8FF"/>
+<stop offset="0.128906" stop-color="#00A9FF"/>
+<stop offset="0.132813" stop-color="#00A9FF"/>
+<stop offset="0.136719" stop-color="#00AAFF"/>
+<stop offset="0.140625" stop-color="#00AAFF"/>
+<stop offset="0.144531" stop-color="#00ABFF"/>
+<stop offset="0.148438" stop-color="#00ABFF"/>
+<stop offset="0.152344" stop-color="#00ACFF"/>
+<stop offset="0.15625" stop-color="#00ACFF"/>
+<stop offset="0.160156" stop-color="#00ADFF"/>
+<stop offset="0.164063" stop-color="#00AEFF"/>
+<stop offset="0.167969" stop-color="#00AEFF"/>
+<stop offset="0.171875" stop-color="#00AFFF"/>
+<stop offset="0.175781" stop-color="#00AFFF"/>
+<stop offset="0.179688" stop-color="#00B0FF"/>
+<stop offset="0.183594" stop-color="#00B0FF"/>
+<stop offset="0.1875" stop-color="#00B1FF"/>
+<stop offset="0.191406" stop-color="#00B1FF"/>
+<stop offset="0.195312" stop-color="#00B2FF"/>
+<stop offset="0.199219" stop-color="#00B2FF"/>
+<stop offset="0.203125" stop-color="#00B3FF"/>
+<stop offset="0.207031" stop-color="#00B3FF"/>
+<stop offset="0.210938" stop-color="#00B4FF"/>
+<stop offset="0.214844" stop-color="#00B4FF"/>
+<stop offset="0.21875" stop-color="#00B5FF"/>
+<stop offset="0.222656" stop-color="#00B5FF"/>
+<stop offset="0.226563" stop-color="#00B6FF"/>
+<stop offset="0.230469" stop-color="#00B6FF"/>
+<stop offset="0.234375" stop-color="#00B7FF"/>
+<stop offset="0.238281" stop-color="#00B7FF"/>
+<stop offset="0.242188" stop-color="#00B8FF"/>
+<stop offset="0.246094" stop-color="#00B8FF"/>
+<stop offset="0.25" stop-color="#00B9FF"/>
+<stop offset="0.253906" stop-color="#00B9FF"/>
+<stop offset="0.257813" stop-color="#00BAFF"/>
+<stop offset="0.261719" stop-color="#00BAFF"/>
+<stop offset="0.265625" stop-color="#00BBFF"/>
+<stop offset="0.269531" stop-color="#00BBFF"/>
+<stop offset="0.273438" stop-color="#00BCFF"/>
+<stop offset="0.277344" stop-color="#00BCFF"/>
+<stop offset="0.28125" stop-color="#00BDFF"/>
+<stop offset="0.285156" stop-color="#00BDFF"/>
+<stop offset="0.289063" stop-color="#00BEFF"/>
+<stop offset="0.296875" stop-color="#00BEFF"/>
+<stop offset="0.304687" stop-color="#00BFFF"/>
+<stop offset="0.3125" stop-color="#00C0FF"/>
+<stop offset="0.320313" stop-color="#00C0FF"/>
+<stop offset="0.328125" stop-color="#00C1FF"/>
+<stop offset="0.335938" stop-color="#00C2FF"/>
+<stop offset="0.34375" stop-color="#00C2FF"/>
+<stop offset="0.351563" stop-color="#00C3FF"/>
+<stop offset="0.359375" stop-color="#00C4FF"/>
+<stop offset="0.367188" stop-color="#00C4FF"/>
+<stop offset="0.375" stop-color="#00C5FF"/>
+<stop offset="0.382813" stop-color="#00C6FF"/>
+<stop offset="0.390625" stop-color="#00C7FF"/>
+<stop offset="0.398438" stop-color="#00C7FF"/>
+<stop offset="0.40625" stop-color="#00C8FF"/>
+<stop offset="0.414063" stop-color="#00C9FF"/>
+<stop offset="0.421875" stop-color="#00C9FF"/>
+<stop offset="0.429688" stop-color="#00CAFF"/>
+<stop offset="0.4375" stop-color="#00CBFF"/>
+<stop offset="0.445313" stop-color="#00CBFF"/>
+<stop offset="0.453125" stop-color="#00CCFF"/>
+<stop offset="0.460938" stop-color="#00CDFF"/>
+<stop offset="0.46875" stop-color="#00CEFF"/>
+<stop offset="0.476563" stop-color="#00CEFF"/>
+<stop offset="0.484375" stop-color="#00CFFF"/>
+<stop offset="0.492188" stop-color="#00D0FF"/>
+<stop offset="0.5" stop-color="#00D0FF"/>
+<stop offset="0.507813" stop-color="#00D1FF"/>
+<stop offset="0.515625" stop-color="#00D2FF"/>
+<stop offset="0.53125" stop-color="#00D3FF"/>
+<stop offset="0.546875" stop-color="#00D3FF"/>
+<stop offset="0.5625" stop-color="#00D4FF"/>
+<stop offset="0.578125" stop-color="#00D5FF"/>
+<stop offset="0.59375" stop-color="#00D6FF"/>
+<stop offset="0.609375" stop-color="#00D7FF"/>
+<stop offset="0.625" stop-color="#00D8FF"/>
+<stop offset="0.640625" stop-color="#00D9FF"/>
+<stop offset="0.65625" stop-color="#00DAFF"/>
+<stop offset="0.671875" stop-color="#00DBFF"/>
+<stop offset="0.6875" stop-color="#00DCFF"/>
+<stop offset="0.703125" stop-color="#00DDFF"/>
+<stop offset="0.71875" stop-color="#00DEFF"/>
+<stop offset="0.734375" stop-color="#00DFFF"/>
+<stop offset="0.75" stop-color="#00DFFF"/>
+<stop offset="0.78125" stop-color="#00E0FF"/>
+<stop offset="0.8125" stop-color="#00E0FF"/>
+<stop offset="0.84375" stop-color="#00E1FF"/>
+<stop offset="0.875" stop-color="#00E1FF"/>
+<stop offset="0.90625" stop-color="#00E2FF"/>
+<stop offset="0.9375" stop-color="#00E3FF"/>
+<stop offset="1" stop-color="#00E3FF"/>
+</linearGradient>
+<linearGradient id="PlayStorepaint1_linear" x1="37.631" y1="64.2026" x2="31.4923" y2="52.1621" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF3A44"/>
+<stop offset="0.5" stop-color="#FF3A44"/>
+<stop offset="0.5625" stop-color="#FF3A44"/>
+<stop offset="0.59375" stop-color="#FF3A44"/>
+<stop offset="0.609375" stop-color="#FF3A44"/>
+<stop offset="0.625" stop-color="#FE3944"/>
+<stop offset="0.640625" stop-color="#FD3945"/>
+<stop offset="0.65625" stop-color="#FD3945"/>
+<stop offset="0.671875" stop-color="#FC3845"/>
+<stop offset="0.6875" stop-color="#FC3846"/>
+<stop offset="0.703125" stop-color="#FB3746"/>
+<stop offset="0.71875" stop-color="#FA3746"/>
+<stop offset="0.734375" stop-color="#FA3647"/>
+<stop offset="0.75" stop-color="#F93647"/>
+<stop offset="0.765625" stop-color="#F93647"/>
+<stop offset="0.78125" stop-color="#F83548"/>
+<stop offset="0.796875" stop-color="#F73548"/>
+<stop offset="0.8125" stop-color="#F73448"/>
+<stop offset="0.828125" stop-color="#F63448"/>
+<stop offset="0.84375" stop-color="#F53349"/>
+<stop offset="0.859375" stop-color="#F53349"/>
+<stop offset="0.875" stop-color="#F43349"/>
+<stop offset="0.890625" stop-color="#F4324A"/>
+<stop offset="0.90625" stop-color="#F3324A"/>
+<stop offset="0.921875" stop-color="#F2314A"/>
+<stop offset="0.9375" stop-color="#F2314B"/>
+<stop offset="0.953125" stop-color="#F1314B"/>
+<stop offset="0.96875" stop-color="#F1304B"/>
+<stop offset="0.984375" stop-color="#F0304C"/>
+<stop offset="1" stop-color="#EF2F4C"/>
+</linearGradient>
+<linearGradient id="PlayStorepaint2_linear" x1="58.3328" y1="43.2661" x2="36.7934" y2="43.2661" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFDE00"/>
+<stop offset="0.015625" stop-color="#FFDE00"/>
+<stop offset="0.03125" stop-color="#FFDE00"/>
+<stop offset="0.046875" stop-color="#FFDD00"/>
+<stop offset="0.0625" stop-color="#FFDC00"/>
+<stop offset="0.078125" stop-color="#FFDC00"/>
+<stop offset="0.09375" stop-color="#FFDB00"/>
+<stop offset="0.109375" stop-color="#FFDB00"/>
+<stop offset="0.125" stop-color="#FFDA00"/>
+<stop offset="0.140625" stop-color="#FFDA00"/>
+<stop offset="0.15625" stop-color="#FFD900"/>
+<stop offset="0.171875" stop-color="#FFD800"/>
+<stop offset="0.1875" stop-color="#FFD800"/>
+<stop offset="0.203125" stop-color="#FFD700"/>
+<stop offset="0.21875" stop-color="#FFD700"/>
+<stop offset="0.234375" stop-color="#FFD600"/>
+<stop offset="0.25" stop-color="#FFD500"/>
+<stop offset="0.265625" stop-color="#FFD500"/>
+<stop offset="0.28125" stop-color="#FFD400"/>
+<stop offset="0.296875" stop-color="#FFD400"/>
+<stop offset="0.3125" stop-color="#FFD300"/>
+<stop offset="0.328125" stop-color="#FFD300"/>
+<stop offset="0.34375" stop-color="#FFD200"/>
+<stop offset="0.359375" stop-color="#FFD100"/>
+<stop offset="0.375" stop-color="#FFD100"/>
+<stop offset="0.390625" stop-color="#FFD000"/>
+<stop offset="0.40625" stop-color="#FFD000"/>
+<stop offset="0.421875" stop-color="#FFCF00"/>
+<stop offset="0.4375" stop-color="#FFCF00"/>
+<stop offset="0.453125" stop-color="#FFCE00"/>
+<stop offset="0.46875" stop-color="#FFCD00"/>
+<stop offset="0.484375" stop-color="#FFCD00"/>
+<stop offset="0.5" stop-color="#FFCC00"/>
+<stop offset="0.515625" stop-color="#FFCC00"/>
+<stop offset="0.53125" stop-color="#FFCB00"/>
+<stop offset="0.546875" stop-color="#FFCA00"/>
+<stop offset="0.5625" stop-color="#FFCA00"/>
+<stop offset="0.578125" stop-color="#FFC900"/>
+<stop offset="0.59375" stop-color="#FFC900"/>
+<stop offset="0.609375" stop-color="#FFC800"/>
+<stop offset="0.625" stop-color="#FFC800"/>
+<stop offset="0.640625" stop-color="#FFC700"/>
+<stop offset="0.65625" stop-color="#FFC600"/>
+<stop offset="0.671875" stop-color="#FFC600"/>
+<stop offset="0.6875" stop-color="#FFC500"/>
+<stop offset="0.703125" stop-color="#FFC500"/>
+<stop offset="0.71875" stop-color="#FFC400"/>
+<stop offset="0.734375" stop-color="#FFC300"/>
+<stop offset="0.75" stop-color="#FFC300"/>
+<stop offset="0.765625" stop-color="#FFC200"/>
+<stop offset="0.78125" stop-color="#FFC200"/>
+<stop offset="0.796875" stop-color="#FFC100"/>
+<stop offset="0.8125" stop-color="#FFC100"/>
+<stop offset="0.828125" stop-color="#FFC000"/>
+<stop offset="0.84375" stop-color="#FFBF00"/>
+<stop offset="0.859375" stop-color="#FFBF00"/>
+<stop offset="0.875" stop-color="#FFBE00"/>
+<stop offset="0.890625" stop-color="#FFBE00"/>
+<stop offset="0.90625" stop-color="#FFBD00"/>
+<stop offset="0.9375" stop-color="#FFBC00"/>
+<stop offset="0.96875" stop-color="#FFBB00"/>
+<stop offset="1" stop-color="#FFBB00"/>
+</linearGradient>
+<image id="PlayStoreimage0" width="165" height="138" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAACKCAIAAABEsx1uAAAABmJLR0QA/wD/AP+gvaeTAAABiklEQVR4nO3RQQrCMBRAwdYLeP/zeC0hXYhotRURCsKbWSWk/Ca8+Xo5T8/m9/XYP7p/sHt0247t08d6fJw/TfNYb3+45HrIxiW/GXLwS18GHuB0+B/4J3q36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLXq36N2id4veLQuvRg30apKsewAAAABJRU5ErkJggg=="/>
+<image id="PlayStoreimage1" width="269" height="207" xlink:href="data:image/png;base64,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"/>
+<image id="PlayStoreimage2" width="269" height="207" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>

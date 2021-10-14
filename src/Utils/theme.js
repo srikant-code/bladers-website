@@ -1,5 +1,7 @@
 // import KeyShortcuts from "../components/atomic/keyShortcuts";
 // import KEY_SHORTCUTS from "./keyShortcuts";
+import { ReactComponent as PlayStore } from "../assets/svgs/appstore.svg";
+import { ReactComponent as BrahmosLogo } from "../assets/svgs/brahmos_logo.svg";
 import { ReactComponent as Contact } from "../assets/svgs/contact.svg";
 import { ReactComponent as Developer } from "../assets/svgs/developer.svg";
 import { ReactComponent as Discord } from "../assets/svgs/discord.svg";
@@ -9,12 +11,14 @@ import { ReactComponent as Facebook } from "../assets/svgs/facebook.svg";
 import { ReactComponent as Feedback } from "../assets/svgs/feedback.svg";
 import { ReactComponent as Instagram } from "../assets/svgs/instagram.svg";
 import { ReactComponent as Linkedin } from "../assets/svgs/linkedin.svg";
+import { ReactComponent as LinkedinOutline } from "../assets/svgs/linkedin_outline.svg";
 import { ReactComponent as Location } from "../assets/svgs/location.svg";
 import { ReactComponent as Park } from "../assets/svgs/park.svg";
 import { ReactComponent as Phone } from "../assets/svgs/phone.svg";
+import { ReactComponent as AppStore } from "../assets/svgs/playstore.svg";
 import { ReactComponent as Privacy } from "../assets/svgs/privacy.svg";
+import { ReactComponent as TwitterOutline } from "../assets/svgs/twitter_outline.svg";
 import { ReactComponent as Video } from "../assets/svgs/video.svg";
-import { ReactComponent as BrahmosLogo } from "../assets/svgs/brahmos_logo.svg";
 import { Pxtorem } from "./Constants";
 // default theme
 
@@ -190,6 +194,11 @@ let changeColors_Variant2 = changeColors(
 );
 
 export let ICONS_SVG = {
+  appStore: {
+    svg: <AppStore />,
+    name: "App Store",
+    css: changeColors_Variant1,
+  },
   brahmosLogo: {
     svg: <BrahmosLogo />,
     name: "Brahmos Logo",
@@ -243,6 +252,11 @@ export let ICONS_SVG = {
     name: "Linkedin",
     css: changeColors_Variant1,
   },
+  linkedinOutline: {
+    svg: <LinkedinOutline />,
+    name: "Linkedin",
+    css: changeColors_Variant1,
+  },
   location: {
     svg: <Location />,
     name: "Location",
@@ -253,6 +267,11 @@ export let ICONS_SVG = {
     name: "Park",
     css: changeColors_Variant1,
   },
+  playStore: {
+    svg: <PlayStore />,
+    name: "Play Store",
+    css: changeColors_Variant1,
+  },
   phone: {
     svg: <Phone />,
     name: "Phone",
@@ -261,6 +280,11 @@ export let ICONS_SVG = {
   privacy: {
     svg: <Privacy />,
     name: "Privacy",
+    css: changeColors_Variant1,
+  },
+  twitter: {
+    svg: <TwitterOutline />,
+    name: "Twitter",
     css: changeColors_Variant1,
   },
   video: {
