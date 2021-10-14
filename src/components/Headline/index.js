@@ -12,7 +12,7 @@ export const Headline = ({ text, height = "2.75rem", width = "10.8rem" }) => {
         xmlns="http://www.w3.org/2000/svg">
         <text
           stroke="url(#paint0_radial)"
-          strokeWidth="7.1327"
+          strokeWidth="5.7327"
           xmlSpace="preserve"
           style={{ whiteSpace: "pre" }}
           fontFamily="Beyblade Metal Fight"

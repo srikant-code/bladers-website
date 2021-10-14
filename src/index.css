@@ -15,7 +15,9 @@ text,
 svg * {
     font-family: "Beyblade Metal Fight Regular";
     font-style: normal;
+    font-weight: normal;
     z-index: -1;
+    letter-spacing: 0.5px;
 }
 
 * {
