@@ -6,6 +6,8 @@ import Footer from "./containers/Footer";
 import Theme from "./Utils/theme";
 import { Pxtorem } from "./Utils/Constants";
 import { Flex } from "./components/Container";
+import { TeamBrahmos } from "./containers/Team";
+import { DownloadBladers } from "./containers/Download";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           height: Pxtorem(728),
         }}
       />
+      <TeamBrahmos />
+      <DownloadBladers />
       <Footer />
       <Flex
         style={{
