@@ -60,7 +60,7 @@ let COLORS = {
     color_2: "#48B2FF", // secondary
   },
   colors: {
-    color_1: "#56D00C", // green
+    color_1: "#00FFE0", // green
     color_2: "#EF243D", // red
     color_3: "#FF5C9C", // pink
     color_4: "#7B61FF", // violet
