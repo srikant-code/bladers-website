@@ -1,5 +1,4 @@
 import { Flex } from "../../components/Container";
-import { CustomLink } from "../../components/Link/index";
 import { Pxtorem } from "../../Utils/Constants.js";
 import Theme from "../../Utils/theme";
 import { AddressLinks } from "./addressLinks";
