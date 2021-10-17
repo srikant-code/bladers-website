@@ -1,8 +1,6 @@
-import DownloadBladersImage from "../../assets/svgs/phone_playstore_mockup.png";
 import { Flex } from "../../components/Container";
 import { Headline } from "../../components/Headline";
-import { Icon } from "../../components/Icon";
-import Theme, { ICONS_SVG } from "../../Utils/theme";
+import Theme from "../../Utils/theme";
 const Card = ({ value, parameter }) => {
   const styles = {
     value: {
@@ -15,6 +13,7 @@ const Card = ({ value, parameter }) => {
     },
     card: {
       padding: Theme.SPACING(30),
+      width: Theme.SPACING(156),
     },
   };
   return (
@@ -74,7 +73,7 @@ export const Acheivements = () => {
   return (
     <Flex style={styles.flex} flexFlow="column">
       <div style={styles.headline}>
-        <Headline text="OUR ACHIEVEMENTS" />
+        <Headline text="OUR ACHIEVEMENTS" width="11.8rem" />
       </div>
       <Flex style={{ width: "100%" }}>
         {/* justifyContent="flex-start" */}

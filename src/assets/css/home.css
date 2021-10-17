@@ -36,3 +36,20 @@
     filter: drop-shadow(0px 0px 20px #00FFE0);
     transition: all 0.3s ease-in;
 }
+
+.gameplayVideo {
+    background: linear-gradient(231.57deg, #005D6A 11.82%, #000000 82.4%);
+    /* bladers/solid/blue */
+    border: 1px solid #24FFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px rgba(0, 255, 224, 0.6);
+    border-radius: 22px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.gameplayVideo:hover {
+    box-shadow: 0px 10px 40px rgba(0, 255, 224, 0.6);
+    opacity: 1 !important;
+    transition: all 0.3s ease-in;
+}

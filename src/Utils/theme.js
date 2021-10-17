@@ -68,6 +68,7 @@ let COLORS = {
   gradient: {
     gradient_2: `linear-gradient(340deg, #000000 11.82%, #005D6A 82.4%)`, // footer
     gradient_1: `linear-gradient(23deg, rgb(0, 0, 0) 11.82%, rgb(0, 93, 106) 82.4%)`, // download_component
+    gradient_3: `linear-gradient(208deg, rgb(0, 0, 0) 11.82%, rgb(0, 93, 106) 82.4%)`, // acheivement_component
   },
   effects: {
     blue_glow: {

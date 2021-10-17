@@ -9,6 +9,9 @@ import { Flex } from "./components/Container";
 import { TeamBrahmos } from "./containers/Team";
 import { DownloadBladers } from "./containers/Download";
 import { Acheivements } from "./containers/Acheivements";
+import { Gameplay } from "./containers/Gameplay";
+import Screenshot1 from "./assets/svgs/screenshot1.png";
+import { OurJourney } from "./containers/Journey";
 
 function App() {
   return (
@@ -16,11 +19,16 @@ function App() {
       <Header />
       <div
         style={{
-          background: Theme.COLORS.gradient.gradient_1,
-          height: Pxtorem(728),
+          background: `url(${Screenshot1})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "right",
+          height: Pxtorem(1028),
         }}
       />
+      <Gameplay />
       <Acheivements />
+      <OurJourney />
       <TeamBrahmos />
       <DownloadBladers />
       <Footer />
