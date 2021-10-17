@@ -22,7 +22,7 @@ function App() {
           background: `url(${Screenshot1})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "right",
+          backgroundPosition: "center",
           height: Pxtorem(1028),
         }}
       />
