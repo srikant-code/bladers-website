@@ -8,6 +8,7 @@ import { Pxtorem } from "./Utils/Constants";
 import { Flex } from "./components/Container";
 import { TeamBrahmos } from "./containers/Team";
 import { DownloadBladers } from "./containers/Download";
+import { Acheivements } from "./containers/Acheivements";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           height: Pxtorem(728),
         }}
       />
+      <Acheivements />
       <TeamBrahmos />
       <DownloadBladers />
       <Footer />

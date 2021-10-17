@@ -4,14 +4,18 @@ import { Icon } from "../../components/Icon";
 import Theme, { ICONS_SVG } from "../../Utils/theme";
 export const DownloadBladers = () => {
   const styles = {
-    mockup: { width: "30%" },
+    mockup: { width: "30%"},
     playstore: { width: "" },
     appstore: { opacity: 0.4 },
     text: { lineHeight: 1, paddingTop: Theme.SPACING(20) },
+    flex: {
+        padding: "65px 0 0 0",
+        background: Theme.COLORS.gradient.gradient_1
+    }
   };
   return (
     <>
-      <Flex>
+      <Flex style={styles.flex}>
         <img
           style={styles.mockup}
           src={DownloadBladersImage}
