@@ -3,6 +3,7 @@ import Theme from "../../Utils/theme";
 import Line from "../../assets/svgs/indicator_line.png";
 import { Headline } from "../../components/Headline";
 import { CustomLink } from "../../components/Link";
+import { useEffect, useState } from "react";
 export const Gameplay = () => {
   const styles = {
     activeCard: {
@@ -54,6 +55,13 @@ export const Gameplay = () => {
       color: Theme.COLORS.colors.color_1,
     },
   };
+
+  const [mute, setMute] = useState(true);
+
+  useEffect(() => {
+    document.getElementById("video1").muted = mute;
+  }, [mute]);
+
   return (
     <Flex style={styles.flex}>
       <Flex alignItems="flex-start" style={styles.indicatorCont}>
@@ -70,13 +78,20 @@ export const Gameplay = () => {
               className="video"
               crossOrigin
               playsInline
-              // autoPlay
-              muted
-              // controls={true}
+              onCLick={() => setMute(!mute)}
+              autoPlay
+              muted={mute ?? null}
+              id="video1"
+              controls={true}
               poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
-              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4">
+              //   src="https://user-images.githubusercontent.com/46858011/137812386-c32fe8b6-63ae-4d7c-85d0-35075295b886.mp4"
+            >
               <source
-                src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                src="https://user-images.githubusercontent.com/46858011/137812386-c32fe8b6-63ae-4d7c-85d0-35075295b886.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://user-images.githubusercontent.com/46858011/137813452-2c6fe16a-871d-40bf-b177-0642e26c56ae.mp4"
                 type="video/mp4"
               />
             </video>
@@ -86,7 +101,9 @@ export const Gameplay = () => {
               <div style={styles.userAccount}> </div>
               <div>
                 <div style={styles.streamerName}>Yoytube Gamer</div>
-                <CustomLink text="Stream on Youtube" href="#"></CustomLink>
+                <CustomLink
+                  text="Stream on Youtube"
+                  href="http://youtube.com/watch?v=JltLRg2YPLc&ab_channel=%F0%9F%92%A5DarkSpeezoYT%F0%9F%92%A5"></CustomLink>
               </div>
             </Flex>
           </div>

@@ -1,74 +1,113 @@
-    .background {
-        background: black;
-    }
-    
-    .icon:hover {
-        filter: drop-shadow(0px 0px 20px #00FFE0);
-        transition: all 0.3s ease-in;
-    }
-    
-    .link:hover {
-        /* text-decoration: underline !important; */
-        color: #00FFE0 !important;
-        transition: all 0.3s ease-in;
-    }
-    
-    .link:hover::after {
-        content: '  ->';
-        opacity: 1;
-        transition: all 0.3s ease-in;
-        margin-left: 10px;
-        width: 30px;
-    }
-    
-    .link {
-        transition: all 0.3s ease-in;
-    }
-    
-    .link:after {
-        transition: all 0.3s ease-in;
-        content: '';
+.background {
+    background: black;
+}
+
+.icon:hover {
+    filter: drop-shadow(0px 0px 20px #00FFE0);
+    transition: all 0.3s ease-in;
+}
+
+.link:hover {
+    /* text-decoration: underline !important; */
+    color: #00FFE0 !important;
+    transition: all 0.3s ease-in;
+}
+
+.link:hover::after {
+    content: '  ->';
+    opacity: 1;
+    transition: all 0.3s ease-in;
+    margin-left: 10px;
+    width: 30px;
+}
+
+.link {
+    transition: all 0.3s ease-in;
+}
+
+.link:after {
+    transition: all 0.3s ease-in;
+    content: '';
+    opacity: 0;
+    margin-left: 0px;
+}
+
+.link:hover .icon {
+    filter: drop-shadow(0px 0px 20px #00FFE0);
+    transition: all 0.3s ease-in;
+}
+
+.gameplayVideo {
+    background: linear-gradient(231.57deg, #005D6A 11.82%, #000000 82.4%);
+    /* bladers/solid/blue */
+    border: 1px solid #24FFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px rgba(0, 255, 224, 0.6);
+    border-radius: 22px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.gameplayVideo:hover {
+    box-shadow: 0px 10px 40px rgba(0, 255, 224, 0.6);
+    opacity: 1 !important;
+    transition: all 0.3s ease-in;
+}
+
+video {
+    transition: all 0.5s ease-in;
+}
+
+video::-webkit-media-controls {
+    display: none;
+}
+
+video:hover {
+    transform: scale(1.1);
+    transition: all 0.6s ease-in;
+}
+
+.journeyBox {
+    background: linear-gradient(231.57deg, #005D6A 11.82%, #000000 82.4%);
+    box-shadow: 0px 0px 28.1247px #FE3D00;
+    border-radius: 9.24098px;
+}
+
+.animateFromTop {
+    transition: all 0.3s ease-in;
+    position: relative;
+    animation: animateUp forwards 0.4s ease-in;
+}
+
+@keyframes animateUp {
+    from {
+        margin-top: -100px;
         opacity: 0;
-        margin-left: 0px;
     }
-    
-    .link:hover .icon {
-        filter: drop-shadow(0px 0px 20px #00FFE0);
-        transition: all 0.3s ease-in;
+    to {
+        margin-top: 0px;
+        opacity: 1;
     }
-    
-    .gameplayVideo {
-        background: linear-gradient(231.57deg, #005D6A 11.82%, #000000 82.4%);
-        /* bladers/solid/blue */
-        border: 1px solid #24FFFF;
-        box-sizing: border-box;
-        box-shadow: 0px 10px 40px rgba(0, 255, 224, 0.6);
-        border-radius: 22px;
-        transition: all 0.3s ease-in;
-        cursor: pointer;
-    }
-    
-    .gameplayVideo:hover {
-        box-shadow: 0px 10px 40px rgba(0, 255, 224, 0.6);
-        opacity: 1 !important;
-        transition: all 0.3s ease-in;
-    }
-    
-    video {
-        transition: all 0.5s ease-in;
-    }
-    
-    video::-webkit-media-controls {
-        display: none;
-    }
-    
-    video:hover {
-        transform: scale(1.1);
-        transition: all 0.6s ease-in;
-    }
-    
-    .journeyBox {
-        background: linear-gradient(231.57deg, #005D6A 11.82%, #000000 82.4%);
-        box-shadow: 0px 0px 28.1247px #FE3D00;
-        border-radius: 9.24098px;
-    }
+}
+
+.scrollHiddenContainer {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scrollHiddenContainer::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.jouneyCard {
+    border-left: 0 solid #005D6A;
+    transition: all 0.3s ease-in;
+}
+
+.jouneyCard:hover {
+    border-left: 6px solid #000e10;
+    transition: all 0.3s ease-in;
+}
