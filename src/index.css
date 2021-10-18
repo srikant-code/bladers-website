@@ -1,4 +1,5 @@
 @import-normalize;
+@import url('https://fonts.googleapis.com/css?family=Inter');
 
 /* bring in normalize.css styles */
 
@@ -33,4 +34,11 @@ svg * {
     font-style: italic;
     font-size: 16px;
     line-height: 31px;
+}
+
+@font-face {
+    font-family: 'Beyblade Metal Fight Regular';
+    src: local('Beyblade Metal Fight Regular'), url(./assets/fonts/beyblade_metal_fight.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
 }

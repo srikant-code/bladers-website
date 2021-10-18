@@ -6,6 +6,7 @@ interface Props {
   flexFlow?: string;
   display?: string;
   style?: any;
+  className?: any;
 }
 
 export const Flex: React.FC<Props> = ({
@@ -16,6 +17,7 @@ export const Flex: React.FC<Props> = ({
   flexFlow = "row wrap",
   display = "flex",
   style,
+  className,
 }) => {
   const styles = {
     flex: {
@@ -27,5 +29,9 @@ export const Flex: React.FC<Props> = ({
       ...style,
     },
   };
-  return <div style={styles.flex}>{children}</div>;
+  return (
+    <div style={styles.flex} className={className ?? null}>
+      {children}
+    </div>
+  );
 };
