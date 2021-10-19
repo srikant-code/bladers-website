@@ -1,10 +1,15 @@
-export const Headline = ({ text, height = "2.75rem", width = "10.8rem" }) => {
+export const Headline = ({
+  text,
+  height = "2.75rem",
+  width = "10.8rem",
+  translateX = "45px",
+}) => {
   return (
     <div style={{ height: height, width: width }}>
       <svg
         className="beyblade-font"
         style={{
-          transform: "scale(2) translateX(45px) translateY(-10px)",
+          transform: `scale(2) translateX(${translateX}) translateY(-10px)`,
           width: width,
           height: height,
         }}

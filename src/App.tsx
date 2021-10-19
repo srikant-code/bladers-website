@@ -12,6 +12,7 @@ import { Acheivements } from "./containers/Acheivements";
 import { Gameplay } from "./containers/Gameplay";
 import Screenshot1 from "./assets/svgs/screenshot1.png";
 import { OurJourney } from "./containers/Journey";
+import { ScreenshotSlideshow } from "./containers/Screenshots";
 
 function App() {
   return (
@@ -23,13 +24,15 @@ function App() {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "right",
-          height: Pxtorem(1028),
+          height: Pxtorem(900),
         }}
+        id="Home"
       />
       <Gameplay />
       <Acheivements />
       <OurJourney />
       <TeamBrahmos />
+      <ScreenshotSlideshow />
       <DownloadBladers />
       <Footer />
       <Flex

@@ -58,7 +58,9 @@ export const TeamBrahmos = () => {
   return (
     <Flex flexFlow="column">
       <Flex flexFlow="column" alignItems="flex-start">
-        <div style={{ padding: `${Theme.SPACING(100)} 7.5rem 0` }}>
+        <div
+          id="AboutUs"
+          style={{ padding: `${Theme.SPACING(100)} 7.5rem 0` }}>
           <Headline text="TEAM BRAHMOS" />
         </div>
         <p style={styles.paragraph}>

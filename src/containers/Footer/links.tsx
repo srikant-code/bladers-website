@@ -9,7 +9,11 @@ export const FooterLinks = () => {
       <Headline text="LINKS" />
       <Flex alignItems="flex-start">
         <Flex flexFlow="column wrap" alignItems="flex-start">
-          <CustomLink text="Downloads" href="#" icon={ICONS_SVG.downloads} />
+          <CustomLink
+            text="Downloads"
+            href="https://play.google.com/store/apps/details?id=com.gamersngame.BladersAR&hl=en_IN&gl=US&ref=bladers_website"
+            icon={ICONS_SVG.downloads}
+          />
           <CustomLink
             text="Change log & Updates"
             href="#"
@@ -29,8 +33,16 @@ export const FooterLinks = () => {
           flexFlow="column wrap"
           alignItems="flex-start">
           <CustomLink text="Get Featured" href="#" icon={ICONS_SVG.video} />
-          <CustomLink text="Join Discord" href="#" icon={ICONS_SVG.discord} />
-          <CustomLink text="Contact Us" href="#" icon={ICONS_SVG.contact} />
+          <CustomLink
+            text="Join Discord"
+            href="https://discord.gg/qkWvACPEPf"
+            icon={ICONS_SVG.discord}
+          />
+          <CustomLink
+            text="Contact Us"
+            href="https://discord.gg/qkWvACPEPf"
+            icon={ICONS_SVG.contact}
+          />
           <CustomLink
             text="Submit a feedback"
             href="#"

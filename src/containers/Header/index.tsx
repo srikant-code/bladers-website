@@ -18,10 +18,24 @@ export const Header = () => {
     <Flex style={styles.container} justifyContent="space-around">
       <Icon style={styles.logo} icon={ICONS_SVG.brahmosLogo} />
       <Flex style={styles.links}>
-        <CustomLink text="Home" href="#" width={140} />
-        <CustomLink text="About us" href="#" width={140} />
-        <CustomLink text="Join Discord" href="#" width={140} />
-        <CustomLink text="Contact us" href="#" width={140} />
+        <CustomLink sameTab={true} text="Home" href="#Home" width={140} />
+        <CustomLink
+          sameTab={true}
+          text="About us"
+          href="#AboutUs"
+          width={140}
+        />
+        <CustomLink
+          text="Join Discord"
+          href="https://discord.gg/qkWvACPEPf"
+          width={140}
+        />
+        <CustomLink
+          sameTab={true}
+          text="Contact us"
+          href="#ContactUs"
+          width={140}
+        />
       </Flex>
     </Flex>
   );

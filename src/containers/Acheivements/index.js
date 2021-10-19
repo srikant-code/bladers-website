@@ -26,6 +26,10 @@ const Card = ({ value, parameter }) => {
 
 const Data = [
   {
+    value: "#1",
+    param: "on bladers keyword",
+  },
+  {
     value: "+400000",
     param: "Downloads",
   },
@@ -40,10 +44,6 @@ const Data = [
   {
     value: "4.1 ⭐",
     param: "Stars on Playstore",
-  },
-  {
-    value: "#1",
-    param: "on bladers keyword",
   },
   {
     value: "+30",
