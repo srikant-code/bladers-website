@@ -2,10 +2,13 @@ import Theme from "../../Utils/theme";
 import { Icon } from "../Icon";
 
 interface Props {
-  text: string;
+  text?: string;
   href: string;
   width?: number;
   iconLink?: boolean;
+  children?: JSX.Element;
+  justifyContent?: string;
+  sameTab?: boolean;
   icon?: {
     name: string;
     svg: JSX.Element;
@@ -28,13 +31,16 @@ export const CustomLink: React.FC<Props> = ({
   icon,
   width,
   iconLink,
+  children,
+  justifyContent,
+  sameTab,
 }) => {
   const styles = {
     link: {
       color: Theme.COLORS.shades.color_8,
       textDecoration: "none",
       display: "flex",
-      justifyContent: "flex-start",
+      justifyContent: justifyContent ? justifyContent : "flex-start",
       alignItems: "center",
       maxWidth: Theme.SPACING(550),
       width: Theme.SPACING(width ? width : iconLink ? "fit-content" : 300),
@@ -46,10 +52,11 @@ export const CustomLink: React.FC<Props> = ({
       href={href}
       className="link"
       style={styles.link}
-      target="_blank"
+      target={sameTab ? "" : "_blank"}
       rel="noreferrer noopener">
       {icon ? <Icon icon={icon} /> : null}
       {text}
+      {children ? children : null}
     </a>
   );
 };
