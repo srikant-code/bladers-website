@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Theme from "../../Utils/theme";
 import { Icon } from "../Icon";
 
@@ -9,6 +10,8 @@ interface Props {
   children?: JSX.Element;
   justifyContent?: string;
   sameTab?: boolean;
+  removeArrow?: boolean;
+  type?: "email" | "internal";
   icon?: {
     name: string;
     svg: JSX.Element;
@@ -34,6 +37,8 @@ export const CustomLink: React.FC<Props> = ({
   children,
   justifyContent,
   sameTab,
+  type,
+  removeArrow,
 }) => {
   const styles = {
     link: {
@@ -47,10 +52,10 @@ export const CustomLink: React.FC<Props> = ({
       transition: "all 0.3s ease-in-out",
     },
   };
-  return (
+  return type !== "internal" ? (
     <a
-      href={href}
-      className="link"
+      href={type === "email" ? `mailto:${text}` : href}
+      className={removeArrow ? "" : "link"}
       style={styles.link}
       target={sameTab ? "" : "_blank"}
       rel="noreferrer noopener">
@@ -58,5 +63,11 @@ export const CustomLink: React.FC<Props> = ({
       {text}
       {children ? children : null}
     </a>
+  ) : (
+    <Link to={href} className={removeArrow ? "" : "link"} style={styles.link}>
+      {icon ? <Icon icon={icon} /> : null}
+      {text}
+      {children ? children : null}
+    </Link>
   );
 };

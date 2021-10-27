@@ -1,9 +1,12 @@
+import { Headline } from "../../components/Headline";
+import { ResponsiveEffect } from "../../Utils/Constants";
+
 const { useState, useRef, useEffect } = require("react");
 const { Flex } = require("../../components/Container");
 const { default: Theme } = require("../../Utils/theme");
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-const delay = 2500;
+// const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const delay = 4000;
 
 export const ScreenshotSlideshow = () => {
   const [index, setIndex] = useState(0);
@@ -57,62 +60,82 @@ export const ScreenshotSlideshow = () => {
   }, [index]);
 
   return (
-    <div className="slideshow">
-      <div
-        className="slideshowSlider"
-        style={{
-          transform: `translate3d(${-index * 90}%, 0, 0)`,
-          width: "80%",
-        }}>
-        {JSON.map((item, index) => (
-          <img
-            className="slide"
-            key={index}
-            style={{
-              marginRight: Theme.SPACING(30),
-              boxShadow:
-                "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
-              borderRadius: "12px",
-              border: `${Theme.COLORS.colors.color_1} solid 1px`,
-            }}
-            src={require(`../../assets/images/screen${index + 1}.png`).default}
-            alt={JSON[index].alt}
-          />
-        ))}
-      </div>
+    <Flex flexFlow="column">
+      <Headline text="GAME SCREENSHOTS" width="11rem" translateX="0" />
+      <div className="slideshow" id="GameScrenshots">
+        <div
+          className="slideshowSlider"
+          style={{
+            transform: `translate3d(${
+              -index *
+              ResponsiveEffect({
+                xs: "100",
+                sm: "100",
+                md: "100",
+                lg: "100",
+                xl: "80",
+              })
+            }%, 0, 0)`,
+          }}>
+          {JSON.map((item, index) => (
+            <img
+              className="slide"
+              key={index}
+              style={{
+                marginRight: Theme.SPACING(30),
+                boxShadow:
+                  "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
+                borderRadius: "12px",
+                border: `${Theme.COLORS.colors.color_1} solid 1px`,
+                width: ResponsiveEffect({
+                  xs: "95%",
+                  sm: "",
+                  md: "97%",
+                  lg: "97%",
+                  xl: "80%",
+                }),
+              }}
+              src={
+                require(`../../assets/images/screen${index + 1}.png`).default
+              }
+              alt={JSON[index].alt}
+            />
+          ))}
+        </div>
 
-      <div className="slideshowDots">
-        {JSON.map((_, idx) => (
-          <div
-            key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
-            onClick={() => {
-              setIndex(idx);
-            }}></div>
-        ))}
+        <div className="slideshowDots">
+          {JSON.map((_, idx) => (
+            <div
+              key={idx}
+              className={`slideshowDot${index === idx ? " active" : ""}`}
+              onClick={() => {
+                setIndex(idx);
+              }}></div>
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
-
-const Screenshots = ({ activeImage }) => {
-  return (
-    <Flex
-      style={{ width: "50%", paddingBottom: Theme.SPACING(100) }}
-      justifyContent="flex-end">
-      <img
-        className="animateFromTop"
-        style={{
-          marginRight: Theme.SPACING(30),
-          boxShadow: "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
-          borderRadius: "12px",
-          border: `${Theme.COLORS.colors.color_1} solid 1px`,
-        }}
-        src={
-          require(`../../assets/images/screen${activeImage + 1}.png`).default
-        }
-        alt={JSON[activeImage].topic}
-      />
     </Flex>
   );
 };
+
+// const Screenshots = ({ activeImage }) => {
+//   return (
+//     <Flex
+//       style={{ width: "50%", paddingBottom: Theme.SPACING(100) }}
+//       justifyContent="flex-end">
+//       <img
+//         className="animateFromTop"
+//         style={{
+//           marginRight: Theme.SPACING(30),
+//           boxShadow: "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
+//           borderRadius: "12px",
+//           border: `${Theme.COLORS.colors.color_1} solid 1px`,
+//         }}
+//         src={
+//           require(`../../assets/images/screen${activeImage + 1}.png`).default
+//         }
+//         alt={JSON[activeImage].topic}
+//       />
+//     </Flex>
+//   );
+// };

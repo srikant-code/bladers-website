@@ -2,7 +2,7 @@ import { Flex } from "../../components/Container";
 import Theme from "../../Utils/theme";
 import Line from "../../assets/svgs/indicator_line.png";
 import { Headline } from "../../components/Headline";
-import { Pxtorem } from "../../Utils/Constants";
+import { Pxtorem, ResponsiveEffect } from "../../Utils/Constants";
 import Background from "../../assets/svgs/journey.png";
 import { useState } from "react";
 
@@ -74,8 +74,26 @@ const Box = ({ topic, date, mouseMove }) => {
     <div
       onMouseEnter={() => mouseMove()}
       className="jouneyCard"
-      style={{ width: "100%", cursor: "pointer" }}>
-      <Flex flexFlow="column" alignItems="flex-start">
+      style={{
+        width: "100%",
+        cursor: "pointer",
+        marginLeft: ResponsiveEffect({
+          xs: "",
+          sm: "",
+          md: Theme.SPACING(60),
+          lg: Theme.SPACING(60),
+          xl: Theme.SPACING(60),
+        }),
+      }}>
+      <Flex
+        flexFlow="column"
+        alignItems={ResponsiveEffect({
+          xs: "center",
+          sm: "center",
+          md: "flex-start",
+          lg: "flex-start",
+          xl: "flex-start",
+        })}>
         <div style={styles.date}>{date}</div>
         <div style={styles.box} className="journeyBox">
           {topic}
@@ -88,12 +106,33 @@ const Box = ({ topic, date, mouseMove }) => {
 const ImagesOfJourney = ({ activeImage }) => {
   return (
     <Flex
-      style={{ width: "50%", paddingBottom: Theme.SPACING(100) }}
-      justifyContent="flex-end">
+      style={{
+        width: ResponsiveEffect({
+          xs: "100%",
+          sm: "50%",
+          md: "50%",
+          lg: "50%",
+          xl: "50%",
+        }),
+        paddingBottom: Theme.SPACING(100),
+      }}
+      justifyContent={ResponsiveEffect({
+        xs: "center",
+        sm: "center",
+        md: "flex-end",
+        lg: "flex-end",
+        xl: "flex-end",
+      })}>
       <img
         className="animateFromTop"
         style={{
-          marginRight: Theme.SPACING(30),
+          marginRight: ResponsiveEffect({
+            xs: "",
+            sm: "",
+            md: Theme.SPACING(70),
+            lg: Theme.SPACING(110),
+            xl: Theme.SPACING(110),
+          }),
           boxShadow: "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
           borderRadius: "12px",
           border: `${Theme.COLORS.colors.color_1} solid 1px`,
@@ -119,8 +158,38 @@ export const OurJourney = () => {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPosition: "center",
-      height: "54rem",
+      height: ResponsiveEffect({
+        xs: "75rem",
+        sm: "54rem",
+        md: "54rem",
+        lg: "54rem",
+        xl: "54rem",
+      }),
       overflow: "hidden",
+    },
+    imageDataContainer: {
+      width: "100%",
+      overflow: "hidden",
+      flexDirection: ResponsiveEffect({
+        xs: "column",
+        sm: "row",
+        md: "row",
+        lg: "row",
+        xl: "row",
+      }),
+    },
+    dataContainer: {
+      overflowX: "hidden",
+      overflowY: "scroll",
+      width: ResponsiveEffect({
+        xs: "100%",
+        sm: "50%",
+        md: "50%",
+        lg: "50%",
+        xl: "50%",
+      }),
+      paddingTop: Theme.SPACING(10),
+      paddingBottom: "180px",
     },
   };
 
@@ -133,27 +202,20 @@ export const OurJourney = () => {
       flexFlow="column"
       justifyContent="flex-start">
       <div style={{ paddingTop: Theme.SPACING(100) }}>
-        <Headline text="OUR JOURNEY" />
+        <Headline text="OUR JOURNEY" width="8rem" translateX="25px" />
       </div>
-      <Flex
-        flexFlow=""
-        alignItems=""
-        style={{ width: "100%", overflow: "hidden" }}>
+      <Flex flexFlow="" alignItems="" style={styles.imageDataContainer}>
         <ImagesOfJourney activeImage={activeImage} />
         <Flex
           flexFlow="column"
           alignItems="flex-start"
           justifyContent="flex-start"
           className="scrollHiddenContainer"
-          style={{
-            overflow: "scroll",
-            width: "50%",
-            paddingTop: Theme.SPACING(10),
-            paddingBottom: "180px",
-          }}>
+          style={styles.dataContainer}>
           {JSON.map((item, i) => {
             return (
               <Box
+                key={i}
                 topic={item.topic}
                 date={item.date}
                 mouseMove={() => setActiveImage(i)}
