@@ -181,7 +181,7 @@ export const Gameplay = () => {
       <Flex alignItems="flex-start" style={styles.indicatorCont}>
         <img src={Line} style={styles.indicator} alt="gameplay indicator" />
         <div style={styles.headline}>
-          <Headline text="GAMEPLAY" width="12.8rem" translateX="60px" />
+          <Headline text="GAMEPLAY" width="15rem" translateX="70px" />
         </div>
       </Flex>
       <Flex>

@@ -8,7 +8,7 @@ export const DownloadBladers = () => {
   const styles = {
     mockup: {
       width: ResponsiveEffect({
-        xs: "100vw",
+        xs: "100%",
         sm: "100vw",
         md: Theme.SPACING(640),
         lg: Theme.SPACING(540),

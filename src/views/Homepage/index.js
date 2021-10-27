@@ -15,13 +15,7 @@ const LandingPage = () => {
           background: `url(${Screenshot1})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: ResponsiveEffect({
-            xs: "center",
-            sm: "center",
-            md: "center",
-            lg: "center",
-            xl: "right",
-          }),
+          backgroundPosition: "center",
           height: "100vh",
         }}
         id="Home"

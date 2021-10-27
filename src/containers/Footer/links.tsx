@@ -14,7 +14,7 @@ export const FooterLinks = () => {
   });
   return (
     <Flex alignItems="flex-start" flexFlow="column wrap">
-      <Headline text="LINKS" />
+      <Headline text="LINKS" width="3.8rem" translateX="15px" />
       <Flex alignItems="flex-start">
         <Flex flexFlow="column wrap" alignItems="flex-start">
           <CustomLink
@@ -29,24 +29,51 @@ export const FooterLinks = () => {
             icon={ICONS_SVG.park}
             width={linkWidth}
           />
-          <CustomLink text="Privacy Policy" href="/privacy-policy" icon={ICONS_SVG.privacy} type="internal"
-            width={linkWidth} />
-          <CustomLink text="Game Screenshots" href="#GameScrenshots" icon={ICONS_SVG.phone} sameTab={true}
-            width={linkWidth} />
+          <CustomLink
+            text="Privacy Policy"
+            href="/privacy-policy"
+            icon={ICONS_SVG.privacy}
+            type="internal"
+            width={linkWidth}
+          />
+          <CustomLink
+            text="Game Screenshots"
+            href="#GameScrenshots"
+            icon={ICONS_SVG.phone}
+            sameTab={true}
+            width={linkWidth}
+          />
           {/* <CustomLink
             text="System Requirements"
             href="#"
             icon={ICONS_SVG.developer}
           /> */}
-          <CustomLink text="Press Kit" href="/press-kit" icon={ICONS_SVG.contact} type="internal"
-            width={linkWidth} />
+          <CustomLink
+            text="Press Kit"
+            href="/press-kit"
+            icon={ICONS_SVG.contact}
+            type="internal"
+            width={linkWidth}
+          />
         </Flex>
         <Flex
-          style={{ marginLeft: Theme.SPACING(60) }}
+          style={{
+            marginLeft: ResponsiveEffect({
+              xs: "",
+              sm: "",
+              md: Theme.SPACING(60),
+              lg: Theme.SPACING(60),
+              xl: Theme.SPACING(60),
+            }),
+          }}
           flexFlow="column wrap"
           alignItems="flex-start">
-          <CustomLink text="Get Featured" href="#" icon={ICONS_SVG.video}
-            width={linkWidth} />
+          <CustomLink
+            text="Get Featured"
+            href="#"
+            icon={ICONS_SVG.video}
+            width={linkWidth}
+          />
           <CustomLink
             text="Join Discord"
             href={CONSTANTS.DISCORD_JOIN_LINK}

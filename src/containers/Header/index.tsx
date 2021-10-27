@@ -12,10 +12,11 @@ export const Header = () => {
   const { breakpoint } = useWindowDimensions();
   const styles = {
     container: {
-      background: Theme.COLORS.shades.color_1,
+      background: "#00000075",
       position: "fixed",
       zIndex: 100,
       width: "100%",
+      backdropFilter: "blur(5px)"
     },
     logo: {
       padding: Theme.SPACING(20),
@@ -39,7 +40,14 @@ export const Header = () => {
   const [activeSvgLines, setActiveSvgLines] = useState(0);
   return (
     <Flex style={styles.container} justifyContent="space-around">
-      <Icon style={styles.logo} icon={ICONS_SVG.brahmosLogo} />
+      <CustomLink
+        sameTab={true}
+        href="/"
+        iconLink={true}
+        type="internal"
+        removeArrow={true}>
+        <Icon style={styles.logo} icon={ICONS_SVG.brahmosLogo} />
+      </CustomLink>
       <Flex style={styles.links}>
         {breakpoint.active === "lg" || breakpoint.active === "xl" ? (
           <>

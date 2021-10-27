@@ -60,8 +60,8 @@ let COLORS = {
     color_2: "#48B2FF", // secondary
   },
   colors: {
-    color_1: "#00FFE0", // green
-    color_2: "#EF243D", // red
+    color_1: "#00FFE0", // greenish blue
+    color_2: "#002f2d", // darkgreen
     color_3: "#FF5C9C", // pink
     color_4: "#7B61FF", // violet
   },
@@ -69,6 +69,7 @@ let COLORS = {
     gradient_2: `linear-gradient(340deg, #000000 11.82%, #005D6A 82.4%)`, // footer
     gradient_1: `linear-gradient(23deg, rgb(0, 0, 0) 11.82%, rgb(0, 93, 106) 82.4%)`, // download_component
     gradient_3: `linear-gradient(208deg, rgb(0, 0, 0) 11.82%, rgb(0, 93, 106) 82.4%)`, // acheivement_component
+    gradient_4: `linear-gradient(29deg, rgb(0, 185, 185) 1.4%, rgb(36, 255, 255) 48.45%)`, // acheivement_component2 blue
   },
   effects: {
     blue_glow: {
