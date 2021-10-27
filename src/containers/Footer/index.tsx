@@ -11,7 +11,7 @@ const Footer = () => {
     footer: {
       // background: Theme.COLORS.gradient.gradient_2,
       height: ResponsiveEffect({
-        xs: Pxtorem(990),
+        xs: Pxtorem(1190),
         sm: Pxtorem(900),
         md: Pxtorem(708),
         lg: Pxtorem(788),
@@ -44,11 +44,36 @@ const Footer = () => {
         style={{
           position: "absolute",
           bottom: 0,
-          right: Theme.SPACING(20),
-          width: Theme.SPACING(460),
+          right: ResponsiveEffect({
+            xs: Theme.SPACING(0),
+            sm: Theme.SPACING(20),
+            md: Theme.SPACING(20),
+            lg: Theme.SPACING(20),
+            xl: Theme.SPACING(20),
+          }),
+          width: ResponsiveEffect({
+            xs: "100%",
+            sm: Theme.SPACING(460),
+            md: Theme.SPACING(460),
+            lg: Theme.SPACING(460),
+            xl: Theme.SPACING(460),
+          }),
         }}>
-        <CustomLink href="https://discord.gg/qkWvACPEPf" removeArrow={true}>
-          <img src={DiscordJoin} alt="join discord of bladers multiplayer" />
+        <CustomLink
+          href="https://discord.gg/qkWvACPEPf"
+          removeArrow={true}
+          iconLink={true}
+          justifyContent={"center"}>
+          <img
+            src={DiscordJoin}
+            alt="join discord of bladers multiplayer"
+            style={{
+              width: ResponsiveEffect({
+                xs: "100%",
+                sm: "",
+              }),
+            }}
+          />
         </CustomLink>
       </div>
 

@@ -109,12 +109,13 @@ const ImagesOfJourney = ({ activeImage }) => {
       style={{
         width: ResponsiveEffect({
           xs: "100%",
-          sm: "50%",
+          sm: "100%",
           md: "50%",
           lg: "50%",
           xl: "50%",
         }),
-        paddingBottom: Theme.SPACING(100),
+        paddingTop: "2.5rem",
+        paddingBottom: Theme.SPACING(80),
       }}
       justifyContent={ResponsiveEffect({
         xs: "center",
@@ -160,7 +161,7 @@ export const OurJourney = () => {
       backgroundPosition: "center",
       height: ResponsiveEffect({
         xs: "75rem",
-        sm: "54rem",
+        sm: "75rem",
         md: "54rem",
         lg: "54rem",
         xl: "54rem",
@@ -172,7 +173,7 @@ export const OurJourney = () => {
       overflow: "hidden",
       flexDirection: ResponsiveEffect({
         xs: "column",
-        sm: "row",
+        sm: "column",
         md: "row",
         lg: "row",
         xl: "row",
@@ -183,7 +184,7 @@ export const OurJourney = () => {
       overflowY: "scroll",
       width: ResponsiveEffect({
         xs: "100%",
-        sm: "50%",
+        sm: "100%",
         md: "50%",
         lg: "50%",
         xl: "50%",
@@ -202,7 +203,7 @@ export const OurJourney = () => {
       flexFlow="column"
       justifyContent="flex-start">
       <div style={{ paddingTop: Theme.SPACING(100) }}>
-        <Headline text="OUR JOURNEY" width="8rem" translateX="25px" />
+        <Headline text="OUR JOURNEY" width="8rem" translateX="0px" />
       </div>
       <Flex flexFlow="" alignItems="" style={styles.imageDataContainer}>
         <ImagesOfJourney activeImage={activeImage} />

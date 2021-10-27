@@ -16,7 +16,7 @@ export const TeamMember = ({
       margin: "-35px",
       width: ResponsiveEffect({
         xs: "100%",
-        sm: "",
+        sm: "100%",
         md: "",
         lg: "",
         xl: "",
@@ -37,7 +37,7 @@ export const TeamMember = ({
       margin: `${Theme.SPACING(20)} 0`,
       width: ResponsiveEffect({
         xs: "45%",
-        sm: "",
+        sm: "45%",
         md: "48%",
         lg: "",
         xl: "",

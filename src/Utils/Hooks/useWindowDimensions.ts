@@ -66,13 +66,13 @@ const Breakpoints = {
 };
 
 const IdentifyBreakPoints = (width: number): Breakpoint => {
-  if (width > Breakpoints.xl.minWidth && width < Breakpoints.xl.maxWidth)
+  if (width >= Breakpoints.xl.minWidth && width <= Breakpoints.xl.maxWidth)
     return { active: "xl" };
-  else if (width > Breakpoints.lg.minWidth && width < Breakpoints.lg.maxWidth)
+  else if (width >= Breakpoints.lg.minWidth && width <= Breakpoints.lg.maxWidth)
     return { active: "lg" };
-  else if (width > Breakpoints.md.minWidth && width < Breakpoints.md.maxWidth)
+  else if (width >= Breakpoints.md.minWidth && width <= Breakpoints.md.maxWidth)
     return { active: "md" };
-  else if (width > Breakpoints.sm.minWidth && width < Breakpoints.sm.maxWidth)
-    return { active: "xs" };
+  else if (width >= Breakpoints.sm.minWidth && width <= Breakpoints.sm.maxWidth)
+    return { active: "sm" };
   else return { active: "xs" };
 };

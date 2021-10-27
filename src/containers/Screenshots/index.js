@@ -89,7 +89,7 @@ export const ScreenshotSlideshow = () => {
                 border: `${Theme.COLORS.colors.color_1} solid 1px`,
                 width: ResponsiveEffect({
                   xs: "95%",
-                  sm: "",
+                  sm: "95%",
                   md: "97%",
                   lg: "97%",
                   xl: "80%",

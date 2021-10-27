@@ -55,3 +55,40 @@ svg * {
     /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 8px;
+    transition: 0.3s all ease-in;
+    cursor: pointer;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(273.56deg, #000000 2.38%, #000000 98.37%);
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    border: 2px solid #24ffff outset;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #00bba4;
+    cursor: pointer !important;
+    transition: 0.3s all ease-in !important;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #24ffff;
+    cursor: pointer !important;
+    transition: 0.3s all ease-in !important;
+}

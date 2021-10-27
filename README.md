@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.gamersngame.BladersAR&hl=en_IN&gl=US&ref=bladers_website_github"><img src="https://github.com/srikant-code/bladers-website/blob/main/public/logo.png?raw=true" alt="Bladers Online Multiplayer Logo" title="Bladers Online Multiplayer Spinning Tops Game on Playstore Logo"></a>
+  <h1 align="center">Bladers Website</h1>
+</p>
+
+## Download `Bladers Online Multiplayer Beyblade spinning tops` game on Playstore
+
+<a href="https://play.google.com/store/apps/details?id=com.gamersngame.BladersAR&hl=en_IN&gl=US&ref=bladers_website_github"><img src="https://github.com/srikant-code/bladers-website/raw/main/src/assets/svgs/appstore.svg" alt="Bladers Online Multiplayer Logo" title="Bladers Online Multiplayer Spinning Tops Game on Playstore Logo"></a>
+<br />
+<a href="https://discord.gg/qkWvACPEPf"><img align="right" src="https://github.com/srikant-code/bladers-website/raw/main/src/assets/images/join_discord.png" alt="Bladers Online Multiplayer Logo" title="Bladers Online Multiplayer Spinning Tops Game on Playstore Logo"></a>
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

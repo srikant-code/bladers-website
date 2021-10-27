@@ -6,12 +6,13 @@ import Theme from "../../Utils/theme";
 const Card = ({ value, parameter }) => {
   const styles = {
     value: {
-      color: Theme.COLORS.colors.color_1,
+      color: Theme.COLORS.shades.color_2,
       fontSize: Theme.SPACING(30),
       margin: `${Theme.SPACING(10)} 0`,
     },
     param: {
       margin: 0,
+      color: Theme.COLORS.colors.color_2,
     },
     card: {
       padding: ResponsiveEffect({
@@ -53,7 +54,12 @@ const Data = [
       param: "Day 1 retention",
     },
     {
-      value: "4.1 ⭐",
+      value: (
+        <>
+          4.1{" "}
+          <span style={{ fontStyle: "normal", fontSize: "inherit" }}>⭐</span>
+        </>
+      ),
       param: "Stars on Playstore",
     },
     // {
@@ -76,7 +82,7 @@ export const Acheivements = () => {
     text: { lineHeight: 1, paddingTop: Theme.SPACING(20) },
     flex: {
       padding: Theme.SPACING(120),
-      // background: Theme.COLORS.gradient.gradient_1,
+      background: Theme.COLORS.gradient.gradient_4,
     },
     headline: {
       marginLeft: Theme.SPACING(-160),
@@ -90,7 +96,7 @@ export const Acheivements = () => {
       </div>
       <Flex
         style={{ width: "100%" }}
-        flexFlow={"xssmmd".includes(breakpoint.active)  ? "row" : "column"}>
+        flexFlow={"xssmmd".includes(breakpoint.active) ? "row" : "column"}>
         {/* justifyContent="flex-start" */}
         {Data.map((item, index) => {
           return (
