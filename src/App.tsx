@@ -10,39 +10,41 @@ import { TeamBrahmos } from "./containers/Team";
 import { DownloadBladers } from "./containers/Download";
 import { Acheivements } from "./containers/Acheivements";
 import { Gameplay } from "./containers/Gameplay";
-import Screenshot1 from "./assets/svgs/screenshot1.png";
 import { OurJourney } from "./containers/Journey";
 import { ScreenshotSlideshow } from "./containers/Screenshots";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import LandingPage from "./views/Homepage";
+import PrivacyPolicy from "./containers/PrivacyPolicy";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <div
-        style={{
-          background: `url(${Screenshot1})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "right",
-          height: Pxtorem(900),
-        }}
-        id="Home"
-      />
-      <Gameplay />
-      <Acheivements />
-      <OurJourney />
-      <TeamBrahmos />
-      <ScreenshotSlideshow />
-      <DownloadBladers />
+      <Switch>
+        <Route exact path="/">
+          <LandingPage />
+        </Route>
+        <Route path="/privacy-policy">
+          <PrivacyPolicy />
+        </Route>
+        <Route path="/press-kit">
+          <>press kit</>
+        </Route>
+        <Route path="*">
+          {/* <NoMatch /> */}
+          <>No Match 404 not found</>
+        </Route>
+      </Switch>
       <Footer />
       <Flex
         style={{
-          background: Theme.COLORS.gradient.gradient_1,
+          background: Theme.COLORS.shades.color_1,
+          // background: Theme.COLORS.gradient.gradient_1,
           padding: Theme.SPACING(16),
         }}>
         ©️Brahmos Interactive 2021
       </Flex>
-    </>
+    </Router>
   );
 }
 

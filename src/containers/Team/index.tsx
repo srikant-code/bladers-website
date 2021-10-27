@@ -6,6 +6,7 @@ import { Flex } from "../../components/Container";
 import Theme from "../../Utils/theme";
 import { TeamMember } from "../../components/TeamMember";
 import { Headline } from "../../components/Headline";
+import { ResponsiveEffect } from "../../Utils/Constants";
 
 export const TeamBrahmos = () => {
   const styles = {
@@ -15,8 +16,8 @@ export const TeamBrahmos = () => {
       marginBottom: Theme.SPACING(-60),
     },
     contributorsLink: {
-      marginTop: Theme.SPACING(-30),
-      marginBottom: Theme.SPACING(60),
+      // marginTop: Theme.SPACING(-30),
+      marginBottom: Theme.SPACING(90),
       marginLeft: Theme.SPACING(130),
       textDecoration: "underline",
     },
@@ -42,7 +43,7 @@ export const TeamBrahmos = () => {
       src: Anirban,
       alt: "Anirban's Profile",
       name: "Anirban Das",
-      descp: "3D Modeller & UI Developer",
+      descp: "Digetic UI Developer & 3D Modeller",
       linkedin: "",
       twitter: "",
     },
@@ -58,10 +59,8 @@ export const TeamBrahmos = () => {
   return (
     <Flex flexFlow="column">
       <Flex flexFlow="column" alignItems="flex-start">
-        <div
-          id="AboutUs"
-          style={{ padding: `${Theme.SPACING(100)} 7.5rem 0` }}>
-          <Headline text="TEAM BRAHMOS" />
+        <div id="AboutUs" style={{ padding: `${Theme.SPACING(100)} 7.5rem 0` }}>
+          <Headline text="TEAM BRAHMOS" width="8.6rem" translateX="35px" />
         </div>
         <p style={styles.paragraph}>
           This paragraph is itself about us.
@@ -76,7 +75,16 @@ export const TeamBrahmos = () => {
           <br />
           ..
         </p>
-        <Flex style={{ padding: Theme.SPACING(120) }}>
+        <Flex
+          style={{
+            padding: ResponsiveEffect({
+              xs: `${Theme.SPACING(120)} 0`,
+              sm: Theme.SPACING(120),
+              md: Theme.SPACING(120),
+              lg: Theme.SPACING(120),
+              xl: Theme.SPACING(120),
+            }),
+          }}>
           {Data.map((member) => {
             return (
               <TeamMember
@@ -92,7 +100,7 @@ export const TeamBrahmos = () => {
           })}
         </Flex>
         <p style={styles.contributorsLink}>
-          Click to see other contributors 👇
+          Click to see people who have helped us 👇
         </p>
       </Flex>
     </Flex>

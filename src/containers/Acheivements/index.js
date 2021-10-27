@@ -1,5 +1,7 @@
 import { Flex } from "../../components/Container";
 import { Headline } from "../../components/Headline";
+import { ResponsiveEffect } from "../../Utils/Constants";
+import useWindowDimensions from "../../Utils/Hooks/useWindowDimensions";
 import Theme from "../../Utils/theme";
 const Card = ({ value, parameter }) => {
   const styles = {
@@ -12,7 +14,13 @@ const Card = ({ value, parameter }) => {
       margin: 0,
     },
     card: {
-      padding: Theme.SPACING(30),
+      padding: ResponsiveEffect({
+        xs: Theme.SPACING(20),
+        md: Theme.SPACING(40),
+        sm: Theme.SPACING(40),
+        lg: Theme.SPACING(40),
+        xl: Theme.SPACING(40),
+      }),
       width: Theme.SPACING(156),
     },
   };
@@ -25,45 +33,50 @@ const Card = ({ value, parameter }) => {
 };
 
 const Data = [
-  {
-    value: "#1",
-    param: "on bladers keyword",
-  },
-  {
-    value: "+400000",
-    param: "Downloads",
-  },
-  {
-    value: "+10000",
-    param: "Daily Active Users",
-  },
-  {
-    value: "+20%",
-    param: "Day 1 retention",
-  },
-  {
-    value: "4.1 ⭐",
-    param: "Stars on Playstore",
-  },
-  {
-    value: "+30",
-    param: "In-app purchases",
-  },
-  {
-    value: "~9min",
-    param: "Session Length",
-  },
+  [
+    {
+      value: "#1",
+      param: "on bladers keyword",
+    },
+    {
+      value: "+400000",
+      param: "Downloads",
+    },
+    {
+      value: "+10000",
+      param: "Daily Active Users",
+    },
+  ],
+  [
+    {
+      value: "+20%",
+      param: "Day 1 retention",
+    },
+    {
+      value: "4.1 ⭐",
+      param: "Stars on Playstore",
+    },
+    // {
+    //   value: "+30",
+    //   param: "In-app purchases",
+    // },
+    {
+      value: "~9min",
+      param: "Session Length",
+    },
+  ],
 ];
 
 export const Acheivements = () => {
+  const { breakpoint } = useWindowDimensions();
   const styles = {
     mockup: { width: "30%" },
     playstore: { width: "" },
     appstore: { opacity: 0.4 },
     text: { lineHeight: 1, paddingTop: Theme.SPACING(20) },
     flex: {
-      padding: Theme.SPACING(40),
-      background: Theme.COLORS.gradient.gradient_1,
+      padding: Theme.SPACING(120),
+      // background: Theme.COLORS.gradient.gradient_1,
     },
     headline: {
       marginLeft: Theme.SPACING(-160),
@@ -75,11 +88,23 @@ export const Acheivements = () => {
       <div style={styles.headline}>
         <Headline text="OUR ACHIEVEMENTS" width="11.8rem" />
       </div>
-      <Flex style={{ width: "100%" }}>
+      <Flex
+        style={{ width: "100%" }}
+        flexFlow={"xssmmd".includes(breakpoint.active)  ? "row" : "column"}>
         {/* justifyContent="flex-start" */}
-        {Data.map((item) => {
+        {Data.map((item, index) => {
           return (
-            <Card key={item.param} value={item.value} parameter={item.param} />
+            <Flex key={index}>
+              {item.map((card) => {
+                return (
+                  <Card
+                    key={card.param}
+                    value={card.value}
+                    parameter={card.param}
+                  />
+                );
+              })}
+            </Flex>
           );
         })}
       </Flex>

@@ -1,5 +1,7 @@
 @import-normalize;
-@import url('https://fonts.googleapis.com/css?family=Inter');
+
+/* @import url('https://fonts.googleapis.com/css?family=Inter'); */
+
 
 /* bring in normalize.css styles */
 
@@ -12,10 +14,11 @@ html {
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: radial-gradient(1333.81% 304.03% at 21.41% 76.7%, #002823 0%, #007281 38.62%, #002621 89.34%);
+    background: linear-gradient(7.45deg, #000000 1.88%, #00636F 20.45%, #003433 35.41%, #007281 50.07%, #002F2D 65.57%, #006774 79.77%, #002621 96.97%);
+    /* background: radial-gradient(1333.81% 304.03% at 21.41% 76.7%, #002823 0%, #007281 38.62%, #002621 89.34%); */
     color: white;
 }
 
@@ -33,11 +36,17 @@ svg * {
 }
 
 * {
-    font-family: "Inter";
-    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
     font-style: italic;
     font-size: 16px;
     line-height: 31px;
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 14px;
+    }
 }
 
 @font-face {

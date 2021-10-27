@@ -1,3 +1,4 @@
+import { ResponsiveEffect } from "../../Utils/Constants";
 import Theme, { ICONS_SVG } from "../../Utils/theme";
 import { Flex } from "../Container";
 import { CustomLink } from "../Link";
@@ -11,7 +12,16 @@ export const TeamMember = ({
   twitterLink,
 }) => {
   const styles = {
-    image: { margin: "-35px" },
+    image: {
+      margin: "-35px",
+      width: ResponsiveEffect({
+        xs: "100%",
+        sm: "",
+        md: "",
+        lg: "",
+        xl: "",
+      }),
+    },
     name: {
       lineHeight: "0.5",
       fontSize: Theme.SPACING(20),
@@ -20,12 +30,22 @@ export const TeamMember = ({
     descp: {
       lineHeight: "1.6",
       marginTop: "0px",
-      width: "150px",
+      width: "160px",
       textAlign: "center",
+    },
+    flex: {
+      margin: `${Theme.SPACING(20)} 0`,
+      width: ResponsiveEffect({
+        xs: "45%",
+        sm: "",
+        md: "48%",
+        lg: "",
+        xl: "",
+      }),
     },
   };
   return (
-    <Flex flexFlow="column">
+    <Flex flexFlow="column" style={styles.flex}>
       <img src={src} alt={alt} style={styles.image}></img>
       <Flex flexFlow="column">
         <p style={styles.name}>{name}</p>

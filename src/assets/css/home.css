@@ -118,7 +118,8 @@ video:hover {
 .slideshow {
     margin: 0 auto;
     overflow: hidden;
-    padding: 70px;
+    padding-bottom: 80px;
+    padding-top: 20px;
     /* max-width: 500px; */
 }
 
@@ -148,7 +149,7 @@ video:hover {
     border-radius: 50%;
     cursor: pointer;
     margin: 15px 7px 0px;
-    background-color: #005D6A;
+    background-color: #000e10;
     transition: all 0.3s ease-in;
 }
 

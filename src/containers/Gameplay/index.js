@@ -4,6 +4,8 @@ import Line from "../../assets/svgs/indicator_line.png";
 import { Headline } from "../../components/Headline";
 import { CustomLink } from "../../components/Link";
 import { useEffect, useState } from "react";
+import useWindowDimensions from "../../Utils/Hooks/useWindowDimensions";
+import { ResponsiveEffect } from "../../Utils/Constants";
 const VideoData = [
   {
     id: 0,
@@ -50,31 +52,64 @@ const VideoData = [
 ];
 
 export const Gameplay = () => {
+  const { breakpoint } = useWindowDimensions();
+  const activeVideoWidth = ResponsiveEffect({
+    xs: 95,
+    sm: 95,
+    md: 95,
+    lg: 70,
+    xl: 72,
+  });
+  const otherVideoWidth = ResponsiveEffect({
+    xs: 40,
+    sm: 40,
+    md: 40,
+    lg: 20,
+    xl: 20,
+  });
   const styles = {
     activeCard: {
       //   color: Theme.COLORS.colors.color_1,
       fontSize: Theme.SPACING(30),
-      width: "70vw",
-      height: "70vh",
+      width: `${activeVideoWidth}vw`,
+      height: `${(activeVideoWidth / 16) * 9}vw`,
       margin: `${Theme.SPACING(10)} 0 0 0`,
       overflow: "hidden",
+      borderRadius: ResponsiveEffect({
+        xs: Theme.SPACING(12),
+        md: "",
+        sm: "",
+        lg: "",
+        xl: "",
+      }),
     },
     flex: {
       margin: 0,
-      background: Theme.COLORS.gradient.gradient_3,
+      // background: Theme.COLORS.gradient.gradient_3,
       padding: Theme.SPACING(30),
     },
     card: {
-      width: "20vw",
-      height: "22vh",
+      width: `${otherVideoWidth}vw`,
+      height: `${(otherVideoWidth / 16) * 9}vw`,
       margin: `${Theme.SPACING(10)} ${Theme.SPACING(10)} 0 ${Theme.SPACING(
         10
       )}`,
       opacity: 0.4,
       overflow: "hidden",
+      borderRadius: ResponsiveEffect({
+        xs: Theme.SPACING(8),
+        md: "",
+      }),
     },
     indicator: {
       margin: Theme.SPACING(-27),
+      display: ResponsiveEffect({
+        xs: "none",
+        sm: "none",
+        md: "none",
+        lg: "",
+        xl: "",
+      }),
     },
     indicatorCont: {
       marginBottom: Theme.SPACING(-42),
@@ -91,7 +126,13 @@ export const Gameplay = () => {
     watchOnText: {
       position: "absolute",
       marginTop: Theme.SPACING(-100),
-      marginLeft: Theme.SPACING(100),
+      marginLeft: ResponsiveEffect({
+        xs: Theme.SPACING(80),
+        sm: Theme.SPACING(80),
+        md: Theme.SPACING(100),
+        lg: Theme.SPACING(100),
+        xl: Theme.SPACING(100),
+      }),
     },
     userAccount: {
       borderRadius: "499px",
@@ -103,6 +144,16 @@ export const Gameplay = () => {
     },
     streamerName: {
       color: Theme.COLORS.colors.color_1,
+    },
+    headline: {
+      overflow: "hidden",
+      margin: ResponsiveEffect({
+        xs: `${Theme.SPACING(30)} 0 ${Theme.SPACING(60)} 0`,
+        sm: `${Theme.SPACING(30)} 0 ${Theme.SPACING(60)} 0`,
+        md: `${Theme.SPACING(30)} 0 ${Theme.SPACING(60)} 0`,
+        lg: "",
+        xl: "",
+      }),
     },
   };
 
@@ -129,8 +180,8 @@ export const Gameplay = () => {
     <Flex style={styles.flex}>
       <Flex alignItems="flex-start" style={styles.indicatorCont}>
         <img src={Line} style={styles.indicator} alt="gameplay indicator" />
-        <div style={{ overflow: "hidden" }}>
-          <Headline text="GAMEPLAY" width="12.8rem" translateX="60px"/>
+        <div style={styles.headline}>
+          <Headline text="GAMEPLAY" width="12.8rem" translateX="60px" />
         </div>
       </Flex>
       <Flex>
@@ -142,7 +193,7 @@ export const Gameplay = () => {
             <video
               style={styles.actvideo}
               className="video"
-              crossOrigin
+              // crossOrigin
               playsInline
               autoPlay
               muted
@@ -160,7 +211,7 @@ export const Gameplay = () => {
             </video>
           </div>
           <div style={styles.watchOnText}>
-            <Flex>
+            <Flex flexFlow="row">
               <div style={styles.userAccount}>
                 <img
                   src={VideoData[activeVideo].submitterIcon}
@@ -176,12 +227,16 @@ export const Gameplay = () => {
                 </div>
                 <CustomLink
                   text="Stream full video on Youtube"
-                  href={VideoData[activeVideo].submissionSource}></CustomLink>
+                  href={VideoData[activeVideo].submissionSource}
+                  iconLink={true}></CustomLink>
               </div>
             </Flex>
           </div>
         </div>
-        <Flex flexFlow="column wrap">
+        <Flex
+          flexFlow={
+            "xssmmd".includes(breakpoint.active) ? "row wrap" : "column wrap"
+          }>
           {tempVids.map((video) => (
             <div
               key={video.id}
@@ -193,7 +248,7 @@ export const Gameplay = () => {
               <video
                 style={styles.video}
                 className="video"
-                crossOrigin
+                // crossOrigin
                 playsInline
                 autoPlay
                 muted
