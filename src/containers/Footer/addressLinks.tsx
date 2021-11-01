@@ -36,13 +36,15 @@ export const AddressLinks: React.FC<any> = ({ style }) => {
           }>
           <div style={{ marginRight: Theme.SPACING(20) }}>
             <CustomLink
-              text="abc@bladers.co"
+              text="bladers@brahmosinteractive.co"
               href="#"
               type="email"
               icon={ICONS_SVG.email}
+              width={320}
+              // removeArrow={true}
             />
             <CustomLink
-              text="2nd Floor, Ascendas Park Square Mall, ITPL, Whitefield, Bengaluru, India"
+              text="Madhya Pradesh, India"
               href="#"
               icon={ICONS_SVG.location}
               width={350}
@@ -52,22 +54,28 @@ export const AddressLinks: React.FC<any> = ({ style }) => {
           <div>
             <div>Follow us on</div>
             <Flex style={styles.socialLink}>
-              <CustomLink
-                text=""
-                href="#"
-                icon={ICONS_SVG.facebook}
-                iconLink={true}
-              />
-              <CustomLink
+              {/* <CustomLink
                 text=""
                 href="#"
                 icon={ICONS_SVG.instagram}
                 iconLink={true}
+              /> */}
+              <CustomLink
+                text=""
+                href="https://twitter.com/BrahmosI"
+                icon={ICONS_SVG.twitter}
+                iconLink={true}
               />
               <CustomLink
                 text=""
-                href="#"
-                icon={ICONS_SVG.linkedin}
+                href="https://www.linkedin.com/company/brahmos/"
+                icon={ICONS_SVG.linkedinOutline}
+                iconLink={true}
+              />
+              <CustomLink
+                text=""
+                href="https://www.facebook.com/brahmosInteractive/"
+                icon={ICONS_SVG.facebook}
                 iconLink={true}
               />
             </Flex>

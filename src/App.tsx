@@ -4,7 +4,7 @@ import "./App.css";
 import { Header } from "./containers/Header";
 import Footer from "./containers/Footer";
 import Theme from "./Utils/theme";
-import { Pxtorem } from "./Utils/Constants";
+import { ROUTES, Pxtorem } from "./Utils/Constants";
 import { Flex } from "./components/Container";
 import { TeamBrahmos } from "./containers/Team";
 import { DownloadBladers } from "./containers/Download";
@@ -15,35 +15,45 @@ import { ScreenshotSlideshow } from "./containers/Screenshots";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LandingPage from "./views/Homepage";
 import PrivacyPolicy from "./containers/PrivacyPolicy";
+import ChangeLog from "./containers/ChangeLog";
+import ScrollToTop from "./Utils/scrollToTop";
+import NotFound from "./containers/404";
+import PressKit from "./containers/PressKit";
 
 function App() {
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          <LandingPage />
-        </Route>
-        <Route path="/privacy-policy">
-          <PrivacyPolicy />
-        </Route>
-        <Route path="/press-kit">
-          <>press kit</>
-        </Route>
-        <Route path="*">
-          {/* <NoMatch /> */}
-          <>No Match 404 not found</>
-        </Route>
-      </Switch>
-      <Footer />
-      <Flex
-        style={{
-          background: Theme.COLORS.shades.color_1,
-          // background: Theme.COLORS.gradient.gradient_1,
-          padding: Theme.SPACING(16),
-        }}>
-        ©️Brahmos Interactive 2021
-      </Flex>
+      <ScrollToTop>
+        <Header />
+        <Switch>
+          <Route exact path={ROUTES.HOME_ROUTE}>
+            <LandingPage />
+          </Route>
+          <Route path={ROUTES.PRIVACY_POLICY_ROUTE}>
+            <PrivacyPolicy />
+          </Route>
+          <Route path={ROUTES.CHANGE_LOG_ROUTE}>
+            <ChangeLog />
+          </Route>
+          <Route path={ROUTES.PRESS_KIT_ROUTE}>
+            <PressKit />
+          </Route>
+          <Route path="*">
+            {/* NoMatch */}
+            <NotFound />
+            {/* <>No Match 404 not found</> */}
+          </Route>
+        </Switch>
+        <Footer />
+        <Flex
+          style={{
+            background: Theme.COLORS.shades.color_1,
+            // background: Theme.COLORS.gradient.gradient_1,
+            padding: Theme.SPACING(16),
+          }}>
+          ©️Brahmos Interactive 2021
+        </Flex>
+      </ScrollToTop>
     </Router>
   );
 }
