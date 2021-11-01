@@ -45,7 +45,7 @@ const Footer = () => {
           position: "absolute",
           bottom: 0,
           right: ResponsiveEffect({
-            xs: Theme.SPACING(0),
+            xs: "",
             sm: Theme.SPACING(20),
             md: Theme.SPACING(20),
             lg: Theme.SPACING(20),

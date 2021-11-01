@@ -4,22 +4,71 @@ import { Icon } from "../../components/Icon";
 import { CustomLink } from "../../components/Link";
 import Theme, { ICONS_SVG } from "../../Utils/theme";
 import DownloadButton from "../../assets/images/downloadbutton.png";
-import { CONSTANTS } from "../../Utils/Constants";
+import { CONSTANTS, ROUTES } from "../../Utils/Constants";
 import useWindowDimensions from "../../Utils/Hooks/useWindowDimensions";
 import { useState } from "react";
 
 export const Header = () => {
   const { breakpoint } = useWindowDimensions();
+  const HeaderLinks = () => (
+    <>
+      <CustomLink
+        sameTab={true}
+        text="Home"
+        href={`${ROUTES.HOME_ROUTE}#Home`}
+        width={100}
+        removeArrow={true}
+        justifyContent={
+          "xllg".includes(breakpoint.active) ? undefined : "center"
+        }
+      />
+      <CustomLink
+        sameTab={true}
+        text="About us"
+        href={`${ROUTES.HOME_ROUTE}#AboutUs`}
+        width={120}
+        removeArrow={true}
+        justifyContent={
+          "xllg".includes(breakpoint.active) ? undefined : "center"
+        }
+      />
+      <CustomLink
+        text="Join Discord"
+        href={CONSTANTS.DISCORD_JOIN_LINK}
+        width={140}
+        justifyContent={
+          "xllg".includes(breakpoint.active) ? undefined : "center"
+        }
+      />
+      <CustomLink
+        sameTab={true}
+        text="Contact us"
+        href={`${ROUTES.HOME_ROUTE}#ContactUs`}
+        width={120}
+        removeArrow={true}
+        justifyContent={
+          "xllg".includes(breakpoint.active) ? undefined : "center"
+        }
+      />
+    </>
+  );
+
   const styles = {
     container: {
       background: "#00000075",
       position: "fixed",
       zIndex: 100,
       width: "100%",
-      backdropFilter: "blur(5px)"
+      backdropFilter: "blur(5px)",
+      transition: "all 0.3s ease-in",
     },
     logo: {
       padding: Theme.SPACING(20),
+      width: "xs".includes(breakpoint.active)
+        ? Theme.SPACING(140)
+        : "sm".includes(breakpoint.active)
+        ? Theme.SPACING(160)
+        : undefined,
     },
     links: {
       // width: "60%",
@@ -42,41 +91,18 @@ export const Header = () => {
     <Flex style={styles.container} justifyContent="space-around">
       <CustomLink
         sameTab={true}
-        href="/"
+        href={ROUTES.HOME_ROUTE}
         iconLink={true}
         type="internal"
+        width={"xssm".includes(breakpoint.active) ? 120 : undefined}
+        justifyContent={"xs".includes(breakpoint.active) ? "center" : undefined}
         removeArrow={true}>
         <Icon style={styles.logo} icon={ICONS_SVG.brahmosLogo} />
       </CustomLink>
       <Flex style={styles.links}>
-        {breakpoint.active === "lg" || breakpoint.active === "xl" ? (
+        {"lgxl".includes(breakpoint.active) ? (
           <>
-            <CustomLink
-              sameTab={true}
-              text="Home"
-              href="#Home"
-              width={100}
-              removeArrow={true}
-            />
-            <CustomLink
-              sameTab={true}
-              text="About us"
-              href="#AboutUs"
-              width={120}
-              removeArrow={true}
-            />
-            <CustomLink
-              text="Join Discord"
-              href={CONSTANTS.DISCORD_JOIN_LINK}
-              width={140}
-            />
-            <CustomLink
-              sameTab={true}
-              text="Contact us"
-              href="#ContactUs"
-              width={120}
-              removeArrow={true}
-            />
+            <HeaderLinks />
           </>
         ) : (
           <></>
@@ -84,56 +110,70 @@ export const Header = () => {
         <CustomLink
           sameTab={true}
           href={CONSTANTS.DOWNLOAD_BLADERS_LINK}
-          width={200}
+          width={180}
           removeArrow={true}>
           <img
+            style={{ width: Theme.SPACING(180) }}
             src={DownloadButton}
             alt="Download Bladers Online Multiplayer Spinning Tops"
           />
         </CustomLink>
         {"xssmmd".includes(breakpoint.active) ? (
-          <CustomLink
-            href="#"
-            iconLink={true}
-            sameTab={true}
-            width={30}
-            removeArrow={true}>
-            <div
-              onClick={() =>
-                activeSvgLines ? setActiveSvgLines(0) : setActiveSvgLines(1)
-              }
-              style={{ marginTop: "15px" }}>
-              <svg
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                style={{ transition: "0.3s ease-in all" }}>
-                <path
-                  d={SVGLines[activeSvgLines][0]}
-                  stroke="#24FFFF"
-                  stroke-width="3"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d={SVGLines[activeSvgLines][1]}
-                  stroke="#24FFFF"
-                  stroke-width="3"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d={SVGLines[activeSvgLines][2]}
-                  stroke="#24FFFF"
-                  stroke-width="3"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-          </CustomLink>
+          <>
+            <CustomLink
+              href="#"
+              iconLink={true}
+              sameTab={true}
+              width={50}
+              justifyContent="center"
+              removeArrow={true}>
+              <div
+                onClick={() =>
+                  activeSvgLines ? setActiveSvgLines(0) : setActiveSvgLines(1)
+                }
+                style={{ marginTop: "15px" }}>
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ transition: "0.3s ease-in all" }}>
+                  <path
+                    d={SVGLines[activeSvgLines][0]}
+                    stroke="#24FFFF"
+                    strokeWidth="3"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d={SVGLines[activeSvgLines][1]}
+                    stroke="#24FFFF"
+                    strokeWidth="3"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d={SVGLines[activeSvgLines][2]}
+                    stroke="#24FFFF"
+                    strokeWidth="3"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </CustomLink>
+            {activeSvgLines ? (
+              <Flex
+                style={{
+                  margin: Theme.SPACING(20),
+                }}>
+                <HeaderLinks />
+              </Flex>
+            ) : (
+              <></>
+            )}
+          </>
         ) : (
           <></>
         )}

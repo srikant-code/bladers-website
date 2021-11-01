@@ -1,94 +1,85 @@
-@import-normalize;
-
-/* @import url('https://fonts.googleapis.com/css?family=Inter'); */
-
-
-/* bring in normalize.css styles */
-
-
-/* rest of app styles */
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(7.45deg, #000000 1.88%, #00636F 20.45%, #003433 35.41%, #007281 50.07%, #002F2D 65.57%, #006774 79.77%, #002621 96.97%);
-    /* background: radial-gradient(1333.81% 304.03% at 21.41% 76.7%, #002823 0%, #007281 38.62%, #002621 89.34%); */
-    color: white;
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-text,
-svg * {
-    font-family: "Beyblade Metal Fight Regular";
-    font-style: normal;
-    font-weight: normal;
-    z-index: -1;
-    letter-spacing: 0.5px;
-}
-
-* {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 16px;
-    line-height: 31px;
-}
-
-@media screen and (max-width: 480px) {
-    * {
-        font-size: 14px;
-    }
-}
-
-@font-face {
-    font-family: 'Beyblade Metal Fight Regular';
-    src: local('Beyblade Metal Fight Regular'), url(./assets/fonts/beyblade_metal_fight.ttf) format('truetype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
+        @import-normalize;
+        /* @import url('https://fonts.googleapis.com/css?family=Inter'); */
+        /* bring in normalize.css styles */
+        /* rest of app styles */
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: linear-gradient(7.45deg, #000000 1.88%, #00636F 20.45%, #003433 35.41%, #007281 50.07%, #002F2D 65.57%, #006774 79.77%, #002621 96.97%);
+            /* background: radial-gradient(1333.81% 304.03% at 21.41% 76.7%, #002823 0%, #007281 38.62%, #002621 89.34%); */
+            color: white;
+        }
+        
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+        }
+        
+        text,
+        svg * {
+            font-family: "Beyblade Metal Fight Regular";
+            font-style: normal;
+            font-weight: normal;
+            z-index: -1;
+            letter-spacing: 0.5px;
+        }
+        
+        * {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            font-size: 16px;
+            line-height: 31px;
+        }
+        
+        @media screen and (max-width: 480px) {
+            * {
+                font-size: 14px;
+            }
+        }
+        
+        @font-face {
+            font-family: 'Beyblade Metal Fight Regular';
+            src: local('Beyblade Metal Fight Regular'), url(./assets/fonts/beyblade_metal_fight.ttf) format('truetype');
+            /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
-}
-
-
-/* width */
-
-::-webkit-scrollbar {
-    width: 8px;
-    transition: 0.3s all ease-in;
-    cursor: pointer;
-}
-
-
-/* Track */
-
-::-webkit-scrollbar-track {
-    background: linear-gradient(273.56deg, #000000 2.38%, #000000 98.37%);
-    cursor: pointer;
-    transition: 0.3s all ease-in;
-    border: 2px solid #24ffff outset;
-}
-
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-    background: #00bba4;
-    cursor: pointer !important;
-    transition: 0.3s all ease-in !important;
-}
-
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: #24ffff;
-    cursor: pointer !important;
-    transition: 0.3s all ease-in !important;
-}
+        }
+        
+        hr {
+            border: #24ffff solid 1px;
+        }
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 8px;
+            transition: 0.3s all ease-in;
+            cursor: pointer;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            background: linear-gradient(273.56deg, #000000 2.38%, #000000 98.37%);
+            cursor: pointer;
+            transition: 0.3s all ease-in;
+            border: 2px solid #24ffff outset;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: #00bba4;
+            cursor: pointer !important;
+            transition: 0.3s all ease-in !important;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #24ffff;
+            cursor: pointer !important;
+            transition: 0.3s all ease-in !important;
+        }

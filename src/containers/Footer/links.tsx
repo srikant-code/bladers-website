@@ -1,7 +1,7 @@
 import { Flex } from "../../components/Container";
 import { Headline } from "../../components/Headline";
 import { CustomLink } from "../../components/Link";
-import { CONSTANTS, ResponsiveEffect } from "../../Utils/Constants";
+import { CONSTANTS, ROUTES, ResponsiveEffect } from "../../Utils/Constants";
 import Theme, { ICONS_SVG } from "../../Utils/theme";
 
 export const FooterLinks = () => {
@@ -25,20 +25,21 @@ export const FooterLinks = () => {
           />
           <CustomLink
             text="Change log & Updates"
-            href="#"
+            href={ROUTES.CHANGE_LOG_ROUTE}
             icon={ICONS_SVG.park}
             width={linkWidth}
+            type="internal"
           />
           <CustomLink
             text="Privacy Policy"
-            href="/privacy-policy"
+            href={ROUTES.PRIVACY_POLICY_ROUTE}
             icon={ICONS_SVG.privacy}
             type="internal"
             width={linkWidth}
           />
           <CustomLink
             text="Game Screenshots"
-            href="#GameScrenshots"
+            href={`${ROUTES.HOME_ROUTE}#GameScrenshots`}
             icon={ICONS_SVG.phone}
             sameTab={true}
             width={linkWidth}
@@ -50,7 +51,7 @@ export const FooterLinks = () => {
           /> */}
           <CustomLink
             text="Press Kit"
-            href="/press-kit"
+            href={ROUTES.PRESS_KIT_ROUTE}
             icon={ICONS_SVG.contact}
             type="internal"
             width={linkWidth}
@@ -70,7 +71,7 @@ export const FooterLinks = () => {
           alignItems="flex-start">
           <CustomLink
             text="Get Featured"
-            href="#"
+            href="#0"
             icon={ICONS_SVG.video}
             width={linkWidth}
           />
@@ -87,10 +88,16 @@ export const FooterLinks = () => {
             width={linkWidth}
           />
           <CustomLink
-            text="Submit a feedback"
-            href="#"
+            text={
+              <>
+                Submit a feedback <br />
+                or Bug report
+              </>
+            }
+            href={CONSTANTS.BUG_REPORT_LINK}
             icon={ICONS_SVG.feedback}
             width={linkWidth}
+            alignItems={"flex-start"}
           />
         </Flex>
       </Flex>

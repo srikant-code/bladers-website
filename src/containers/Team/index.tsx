@@ -7,6 +7,7 @@ import Theme from "../../Utils/theme";
 import { TeamMember } from "../../components/TeamMember";
 import { Headline } from "../../components/Headline";
 import { ResponsiveEffect } from "../../Utils/Constants";
+import Contributors from "../Contributors";
 
 export const TeamBrahmos = () => {
   const styles = {
@@ -24,8 +25,9 @@ export const TeamBrahmos = () => {
     contributorsLink: {
       // marginTop: Theme.SPACING(-30),
       marginBottom: Theme.SPACING(90),
-      marginLeft: Theme.SPACING(130),
-      textDecoration: "underline",
+      // marginLeft: Theme.SPACING(130),
+      width: "100%",
+      fontSize: 18,
     },
     heading: {
       padding: ResponsiveEffect({
@@ -43,32 +45,32 @@ export const TeamBrahmos = () => {
       alt: "Sanchit's Profile",
       name: "Sanchit Sharma",
       descp: "Lead Unity Game Developer",
-      linkedin: "",
-      twitter: "",
+      linkedin: "https://www.linkedin.com/in/sanchitgng/",
+      twitter: "https://twitter.com/TLOUbiggestfan?s=20",
     },
     {
       src: Aishika,
       alt: "Aishika's Profile",
       name: "Aishika Das",
       descp: "ASO & Unity Game Developer",
-      linkedin: "",
-      twitter: "",
+      linkedin: "https://www.linkedin.com/in/imaishika/",
+      twitter: "https://twitter.com/im_aishika",
     },
     {
       src: Anirban,
       alt: "Anirban's Profile",
       name: "Anirban Das",
       descp: "Digetic UI Developer & 3D Modeller",
-      linkedin: "",
-      twitter: "",
+      linkedin: "https://www.linkedin.com/in/anirbandas52134/",
+      twitter: "#0",
     },
     {
       src: Srikant,
       alt: "Srikant's Profile",
       name: "Srikant Sahoo",
       descp: "Non-Digetic UI/UX Designer",
-      linkedin: "",
-      twitter: "",
+      linkedin: "https://www.linkedin.com/in/srikant-design/",
+      twitter: "https://twitter.com/srikant_design",
     },
   ];
   return (
@@ -135,9 +137,10 @@ export const TeamBrahmos = () => {
             );
           })}
         </Flex>
-        <p style={styles.contributorsLink}>
-          Click to see people who have helped us 👇
-        </p>
+        <Flex style={styles.contributorsLink}>
+          People who have helped us 👇
+        </Flex>
+        <Contributors />
       </Flex>
     </Flex>
   );

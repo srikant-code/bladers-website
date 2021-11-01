@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         style={{
           width: "80%",
           maxWidth: Theme.SPACING(600),
-          margin: `${Theme.SPACING(80)} 0`,
+          margin: `${Theme.SPACING(140)} 0 ${Theme.SPACING(80)}`,
         }}>
         <h1>Privacy Policy for Bladers</h1>
 
