@@ -86,6 +86,7 @@ export const Gameplay = () => {
     flex: {
       margin: 0,
       // background: Theme.COLORS.gradient.gradient_3,
+      background: "#01001c",
       padding: Theme.SPACING(30),
     },
     card: {

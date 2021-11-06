@@ -9,14 +9,14 @@ import Xorphilic from "../../assets/images/xorphilic.jfif";
 const Contributors = () => {
   const Data = [
     {
-      name: "Tvisha Thakur",
+      name: (
+        <>
+          Tvisha Thakur
+          <div style={{ height: "30px" }} />
+        </>
+      ),
       link: "https://www.linkedin.com/in/tvisha-thakur-2090301a5/",
       image: Tvisha,
-    },
-    {
-      name: "XoRphilic",
-      link: "https://www.linkedin.com/company/ar-hub09/",
-      image: Xorphilic,
     },
     {
       name: "Tevfik Ufuk DEMİRBAŞ",
@@ -27,6 +27,16 @@ const Contributors = () => {
       name: "Dmitriy Yukhanov - CodeStage",
       link: "https://twitter.com/dmitriy_focus",
       image: Dimitri,
+    },
+    {
+      name: (
+        <>
+          XoRphilic
+          <div style={{ height: "30px" }} />
+        </>
+      ),
+      link: "https://www.linkedin.com/company/ar-hub09/",
+      image: Xorphilic,
     },
   ];
   const styles = {

@@ -3,16 +3,18 @@ import { Headline } from "../../components/Headline";
 import { ResponsiveEffect } from "../../Utils/Constants";
 import useWindowDimensions from "../../Utils/Hooks/useWindowDimensions";
 import Theme from "../../Utils/theme";
+import FireBG from "../../assets/images/fire.png";
 const Card = ({ value, parameter }) => {
   const styles = {
     value: {
-      color: Theme.COLORS.shades.color_2,
+      color: Theme.COLORS.shades.color_8,
+      // color: Theme.COLORS.shades.color_2,
       fontSize: Theme.SPACING(30),
       margin: `${Theme.SPACING(10)} 0`,
     },
     param: {
       margin: 0,
-      color: Theme.COLORS.colors.color_2,
+      color: Theme.COLORS.colors.color_8,
     },
     card: {
       padding: ResponsiveEffect({
@@ -82,7 +84,13 @@ export const Acheivements = () => {
     text: { lineHeight: 1, paddingTop: Theme.SPACING(20) },
     flex: {
       padding: Theme.SPACING(120),
-      background: Theme.COLORS.gradient.gradient_4,
+      background: `url(${FireBG}), linear-gradient(358deg, rgb(154, 105, 94) 1.4%, rgb(0, 6, 6) 98.45%)`,
+      boxShadow: "rgb(151 58 1) 0px -60px 48px -23px inset",
+      // boxShadow: "0px -60px 48px -23px #ff8845 inset",
+      backgroundBlendMode: "multiply",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "100%",
+      // background: Theme.COLORS.gradient.gradient_4,
     },
     headline: {
       marginLeft: Theme.SPACING(-160),

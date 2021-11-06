@@ -148,7 +148,7 @@ video:hover {
     width: 20px;
     border-radius: 50%;
     cursor: pointer;
-    margin: 15px 7px 0px;
+    margin: 35px 7px 0px;
     background-color: #000e10;
     transition: all 0.3s ease-in;
 }
@@ -157,3 +157,9 @@ video:hover {
     background-color: #00FFE0;
     transition: all 0.3s ease-in;
 }
+
+
+/* .textstroke {
+    -webkit-text-stroke: 30px darkgrey;
+    -webkit-text-fill-color: red;
+} */

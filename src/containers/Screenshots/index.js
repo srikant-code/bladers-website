@@ -6,7 +6,7 @@ const { Flex } = require("../../components/Container");
 const { default: Theme } = require("../../Utils/theme");
 
 // const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-const delay = 4000;
+const delay = 4400;
 
 export const ScreenshotSlideshow = () => {
   const [index, setIndex] = useState(0);
@@ -61,47 +61,52 @@ export const ScreenshotSlideshow = () => {
 
   return (
     <Flex flexFlow="column">
-      <Headline text="GAME SCREENSHOTS" width="11rem" translateX="0" />
+      <Headline text="GAME SCREENSHOTS" width="11.8rem" translateX="0" />
       <div className="slideshow" id="GameScrenshots">
-        <div
+        <Flex
+          flexFlow="row"
           className="slideshowSlider"
           style={{
+            width: "800%",
             transform: `translate3d(${
               -index *
               ResponsiveEffect({
-                xs: "100",
-                sm: "100",
-                md: "100",
-                lg: "100",
-                xl: "80",
+                xs: 100 / 8,
+                sm: 100 / 8,
+                md: 100 / 8,
+                lg: 100 / 8,
+                xl: 100 / 8,
               })
             }%, 0, 0)`,
           }}>
           {JSON.map((item, index) => (
-            <img
-              className="slide"
-              key={index}
-              style={{
-                marginRight: Theme.SPACING(30),
-                boxShadow:
-                  "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
-                borderRadius: "12px",
-                border: `${Theme.COLORS.colors.color_1} solid 1px`,
-                width: ResponsiveEffect({
-                  xs: "95%",
-                  sm: "95%",
-                  md: "97%",
-                  lg: "97%",
-                  xl: "80%",
-                }),
-              }}
-              src={
-                require(`../../assets/images/screen${index + 1}.png`).default
-              }
-              alt={JSON[index].alt}
-            />
+            <Flex style={{ width: "100%" }}>
+              <img
+                className="slide"
+                key={index}
+                style={{
+                  marginRight: Theme.SPACING(15),
+                  marginLeft: Theme.SPACING(15),
+                  boxShadow:
+                    "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
+                  borderRadius: "12px",
+                  border: `${Theme.COLORS.colors.color_1} solid 1px`,
+                  width: ResponsiveEffect({
+                    xs: "95%",
+                    sm: "95%",
+                    md: "97%",
+                    lg: "87%",
+                    xl: "65%",
+                  }),
+                }}
+                src={
+                  require(`../../assets/images/screen${index + 1}.png`).default
+                }
+                alt={JSON[index].alt}
+              />
+            </Flex>
           ))}
-        </div>
+        </Flex>
 
         <div className="slideshowDots">
           {JSON.map((_, idx) => (

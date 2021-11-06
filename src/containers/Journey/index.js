@@ -155,16 +155,26 @@ export const OurJourney = () => {
       padding: Theme.SPACING(30),
     },
     background: {
-      background: `url(${Background})`,
+      background: `url(${Background}), linear-gradient(191deg, rgb(179 103 59) 1.4%, rgb(227 80 80) 98.45%)`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      backgroundPosition: "center",
+      backgroundBlendMode: "soft-light",
+      boxShadow: "#006773 0px -70px 80px -21px inset",
+      backgroundPosition: ResponsiveEffect({
+        xs: "right",
+        sm: "right",
+        md: "center",
+        lg: "center",
+        xl: "center",
+      }),
+      // filter:
+      //   "drop-shadow(30px 26px 15px #ff8845) drop-shadow(-50px 3px 8px #ffa215)",
       height: ResponsiveEffect({
         xs: "75rem",
         sm: "75rem",
-        md: "54rem",
-        lg: "54rem",
-        xl: "54rem",
+        md: "58rem",
+        lg: "58rem",
+        xl: "58rem",
       }),
       overflow: "hidden",
     },
@@ -189,6 +199,7 @@ export const OurJourney = () => {
         lg: "50%",
         xl: "50%",
       }),
+      height: "400px",
       paddingTop: Theme.SPACING(10),
       paddingBottom: "180px",
     },
@@ -197,7 +208,6 @@ export const OurJourney = () => {
   const [activeImage, setActiveImage] = useState(1);
 
   return (
-    // <div style={{ overflow: "scroll" }}>
     <Flex
       style={styles.background}
       flexFlow="column"

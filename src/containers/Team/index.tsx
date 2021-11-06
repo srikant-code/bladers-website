@@ -27,12 +27,12 @@ export const TeamBrahmos = () => {
       marginBottom: Theme.SPACING(90),
       // marginLeft: Theme.SPACING(130),
       width: "100%",
-      fontSize: 18,
+      fontSize: 22,
     },
     heading: {
       padding: ResponsiveEffect({
-        xs: `${Theme.SPACING(60)} 0 ${Theme.SPACING(10)} 0`,
-        sm: `${Theme.SPACING(60)} 0 ${Theme.SPACING(10)} 0`,
+        xs: `${Theme.SPACING(140)} 0 ${Theme.SPACING(10)} 0`,
+        sm: `${Theme.SPACING(140)} 0 ${Theme.SPACING(10)} 0`,
         md: `${Theme.SPACING(100)} 7.5rem 0`,
         lg: `${Theme.SPACING(100)} 7.5rem 0`,
         xl: `${Theme.SPACING(100)} 7.5rem 0`,

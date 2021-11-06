@@ -12,11 +12,12 @@ const LandingPage = () => {
     <>
       <div
         style={{
-          background: `url(${Screenshot1})`,
+          background: `url(${Screenshot1}), black`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "100vh",
+          boxShadow: "black 0px -20px 70px 20px inset",
         }}
         id="Home"
       />

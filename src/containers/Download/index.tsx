@@ -1,4 +1,5 @@
-import DownloadBladersImage from "../../assets/svgs/phone_playstore_mockup.png";
+import DownloadBladersImage from "../../assets/images/downloadphonemockup.png";
+// import DownloadBladersImage from "../../assets/svgs/phone_playstore_mockup.png";
 import { Flex } from "../../components/Container";
 import { Icon } from "../../components/Icon";
 import { CustomLink } from "../../components/Link";
@@ -15,7 +16,7 @@ export const DownloadBladers = () => {
         xl: Theme.SPACING(540),
       }),
       filter:
-        "drop-shadow(rgb(0, 0, 0) 0px 14px 4px) drop-shadow(rgb(0, 0, 0) 0px 104px 54px)",
+        "drop-shadow(#00000060 0px 15px 9px) drop-shadow(#00000080 0px 34px 22px)",
     },
     playstore: { width: "" },
     appstore: { opacity: 0.4, pointerEvents: "none" },

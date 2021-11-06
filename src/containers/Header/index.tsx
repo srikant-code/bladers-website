@@ -3,7 +3,8 @@ import { Flex } from "../../components/Container";
 import { Icon } from "../../components/Icon";
 import { CustomLink } from "../../components/Link";
 import Theme, { ICONS_SVG } from "../../Utils/theme";
-import DownloadButton from "../../assets/images/downloadbutton.png";
+import { ReactComponent as DownloadButton } from "../../assets/images/download.svg";
+// import DownloadButton from "../../assets/images/downloadbutton.png";
 import { CONSTANTS, ROUTES } from "../../Utils/Constants";
 import useWindowDimensions from "../../Utils/Hooks/useWindowDimensions";
 import { useState } from "react";
@@ -59,7 +60,7 @@ export const Header = () => {
       position: "fixed",
       zIndex: 100,
       width: "100%",
-      backdropFilter: "blur(5px)",
+      backdropFilter: "blur(8px)",
       transition: "all 0.3s ease-in",
     },
     logo: {
@@ -95,7 +96,11 @@ export const Header = () => {
         iconLink={true}
         type="internal"
         width={"xssm".includes(breakpoint.active) ? 120 : undefined}
-        justifyContent={"xs".includes(breakpoint.active) ? "center" : undefined}
+        justifyContent={
+          "xs".includes(breakpoint.active) || activeSvgLines
+            ? "center"
+            : undefined
+        }
         removeArrow={true}>
         <Icon style={styles.logo} icon={ICONS_SVG.brahmosLogo} />
       </CustomLink>
@@ -112,11 +117,12 @@ export const Header = () => {
           href={CONSTANTS.DOWNLOAD_BLADERS_LINK}
           width={180}
           removeArrow={true}>
-          <img
+          {/* <img
             style={{ width: Theme.SPACING(180) }}
             src={DownloadButton}
             alt="Download Bladers Online Multiplayer Spinning Tops"
-          />
+          /> */}
+          <DownloadButton style={{ width: Theme.SPACING(180) }} />
         </CustomLink>
         {"xssmmd".includes(breakpoint.active) ? (
           <>
