@@ -20,6 +20,8 @@ const LandingPage = () => {
           boxShadow: "black 0px -20px 70px 20px inset",
         }}
         id="Home"
+        data-aos="slide-up"
+        data-aos-delay="50"
       />
       <Gameplay />
       <Acheivements />

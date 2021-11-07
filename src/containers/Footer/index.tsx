@@ -67,6 +67,8 @@ const Footer = () => {
           <img
             src={DiscordJoin}
             alt="join discord of bladers multiplayer"
+            data-aos="slide-up"
+            data-aos-delay="100"
             style={{
               width: ResponsiveEffect({
                 xs: "100%",
@@ -77,7 +79,7 @@ const Footer = () => {
         </CustomLink>
       </div>
 
-      <Flex alignItems="flex-start">
+      <Flex alignItems="flex-start" animation="slide-up" animationDelay={100}>
         <AddressLinks style={Styles.addressLinks} />
         <FooterLinks />
       </Flex>

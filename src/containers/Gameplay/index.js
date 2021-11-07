@@ -180,8 +180,14 @@ export const Gameplay = () => {
   return (
     <Flex style={styles.flex}>
       <Flex alignItems="flex-start" style={styles.indicatorCont}>
-        <img src={Line} style={styles.indicator} alt="gameplay indicator" />
-        <div style={styles.headline}>
+        <img
+          src={Line}
+          style={styles.indicator}
+          alt="gameplay indicator"
+          data-aos="slide-up"
+          data-aos-delay="50"
+        />
+        <div style={styles.headline} data-aos="slide-up" data-aos-delay="150">
           <Headline text="GAMEPLAY" width="15rem" translateX="70px" />
         </div>
       </Flex>
@@ -190,7 +196,8 @@ export const Gameplay = () => {
           <div
             style={styles.activeCard}
             className="gameplayVideo"
-            onClick={() => setMute(!mute)}>
+            onClick={() => setMute(!mute)}
+            data-aos="slide-up">
             <video
               style={styles.actvideo}
               className="video"
@@ -213,7 +220,7 @@ export const Gameplay = () => {
           </div>
           <div style={styles.watchOnText}>
             <Flex flexFlow="row">
-              <div style={styles.userAccount}>
+              <div style={styles.userAccount} data-aos="slide-up">
                 <img
                   src={VideoData[activeVideo].submitterIcon}
                   alt={VideoData[activeVideo].submittedBy}
@@ -222,7 +229,10 @@ export const Gameplay = () => {
                   className="animateFromTop"
                 />
               </div>
-              <div className="animateFromTop">
+              <div
+                className="animateFromTop"
+                data-aos="slide-up"
+                data-aos-delay="50">
                 <div style={styles.streamerName} className="animateFromTop">
                   {VideoData[activeVideo].submittedBy}
                 </div>
@@ -245,6 +255,8 @@ export const Gameplay = () => {
               onClick={() => {
                 setActiveVideo(video.id);
               }}
+              data-aos="slide-up"
+              data-aos-delay={"" + 50 * (video.id + 1)}
               className="gameplayVideo">
               <video
                 style={styles.video}

@@ -29,8 +29,12 @@ const Card = ({ value, parameter }) => {
   };
   return (
     <Flex flexFlow="column" alignItems="flex-start" style={styles.card}>
-      <p style={styles.value}>{value}</p>
-      <p style={styles.param}>{parameter}</p>
+      <p style={styles.value} data-aos="slide-up" data-aos-delay={100}>
+        {value}
+      </p>
+      <p style={styles.param} data-aos="slide-up" data-aos-delay={200}>
+        {parameter}
+      </p>
     </Flex>
   );
 };
@@ -89,7 +93,13 @@ export const Acheivements = () => {
       // boxShadow: "0px -60px 48px -23px #ff8845 inset",
       backgroundBlendMode: "multiply",
       backgroundRepeat: "no-repeat",
-      backgroundSize: "100%",
+      backgroundSize: ResponsiveEffect({
+        xs: "auto 100%",
+        sm: "auto 100%",
+        md: "auto 100%",
+        lg: "100% auto",
+        xl: "100% auto",
+      }),
       // background: Theme.COLORS.gradient.gradient_4,
     },
     headline: {
@@ -99,7 +109,7 @@ export const Acheivements = () => {
   };
   return (
     <Flex style={styles.flex} flexFlow="column">
-      <div style={styles.headline}>
+      <div style={styles.headline} data-aos="slide-up" data-aos-delay={150}>
         <Headline text="OUR ACHIEVEMENTS" width="11.8rem" />
       </div>
       <Flex
@@ -108,14 +118,16 @@ export const Acheivements = () => {
         {/* justifyContent="flex-start" */}
         {Data.map((item, index) => {
           return (
-            <Flex key={index}>
-              {item.map((card) => {
+            <Flex key={index} animation="slide-up" animationDelay={index * 50}>
+              {item.map((card, i) => {
                 return (
-                  <Card
-                    key={card.param}
-                    value={card.value}
-                    parameter={card.param}
-                  />
+                  <div data-aos="slide-up" data-aos-delay={i * 200}>
+                    <Card
+                      key={card.param}
+                      value={card.value}
+                      parameter={card.param}
+                    />
+                  </div>
                 );
               })}
             </Flex>

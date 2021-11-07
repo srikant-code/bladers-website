@@ -53,7 +53,10 @@ export const AddressLinks: React.FC<any> = ({ style }) => {
           </div>
           <div>
             <div>Follow us on</div>
-            <Flex style={styles.socialLink}>
+            <Flex
+              style={styles.socialLink}
+              animation="slide-up"
+              animationDelay={100}>
               {/* <CustomLink
                 text=""
                 href="#"

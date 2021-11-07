@@ -86,7 +86,11 @@ export const TeamBrahmos = () => {
             lg: "flex-start",
             xl: "flex-start",
           })}>
-          <div id="AboutUs" style={styles.heading}>
+          <div
+            id="AboutUs"
+            style={styles.heading}
+            data-aos-delay="150"
+            data-aos="slide-up">
             <Headline
               text="TEAM BRAHMOS"
               width="8.8rem"
@@ -99,7 +103,7 @@ export const TeamBrahmos = () => {
               })}
             />
           </div>
-          <p style={styles.paragraph}>
+          <p style={styles.paragraph} data-aos-delay="50" data-aos="slide-up">
             This paragraph is itself about us.
             <br />
             We are a team of college students...
@@ -123,21 +127,26 @@ export const TeamBrahmos = () => {
               xl: Theme.SPACING(120),
             }),
           }}>
-          {Data.map((member) => {
+          {Data.map((member, index) => {
             return (
-              <TeamMember
-                key={member.descp}
-                src={member.src}
-                alt={member.alt}
-                name={member.name}
-                descp={member.descp}
-                linkedinLink={member.linkedin}
-                twitterLink={member.twitter}
-              />
+              <div data-aos="slide-up" data-aos-delay={index * 150}>
+                <TeamMember
+                  key={member.descp}
+                  src={member.src}
+                  alt={member.alt}
+                  name={member.name}
+                  descp={member.descp}
+                  linkedinLink={member.linkedin}
+                  twitterLink={member.twitter}
+                />
+              </div>
             );
           })}
         </Flex>
-        <Flex style={styles.contributorsLink}>
+        <Flex
+          style={styles.contributorsLink}
+          data-aos-delay="150"
+          data-aos="slide-up">
           People who have helped us 👇
         </Flex>
         <Contributors />

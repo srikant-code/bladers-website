@@ -48,8 +48,12 @@ export const TeamMember = ({
     <Flex flexFlow="column" style={styles.flex}>
       <img src={src} alt={alt} style={styles.image}></img>
       <Flex flexFlow="column">
-        <p style={styles.name}>{name}</p>
-        <p style={styles.descp}>{descp}</p>
+        <p style={styles.name} data-aos="slide-up" data-aos-delay={0}>
+          {name}
+        </p>
+        <p style={styles.descp} data-aos="slide-up" data-aos-delay={0}>
+          {descp}
+        </p>
       </Flex>
       <Flex>
         <CustomLink

@@ -48,9 +48,13 @@ const Contributors = () => {
   };
   return (
     <>
-      <Flex style={styles.flex}>
+      <Flex style={styles.flex} animation="slide-up">
         {Data.map((contributor, index) => {
-          return <Contributor key={index} data={contributor} />;
+          return (
+            <div data-aos="slide-up" data-aos-delay={index * 150}>
+              <Contributor key={index} data={contributor} />
+            </div>
+          );
         })}
       </Flex>
     </>

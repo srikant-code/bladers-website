@@ -33,9 +33,25 @@ const Contributor = ({ data }) => {
     },
   };
   return (
-    <Flex flexFlow="column" style={styles.flex}>
-      <img src={data.image} alt={data.name} style={styles.image} />
-      <p style={styles.name}>{data.name}</p>
+    <Flex
+      flexFlow="column"
+      style={styles.flex}
+      animation="slide-up"
+      animationDelay={50}
+      >
+      <img
+        src={data.image}
+        alt={data.name}
+        style={styles.image}
+        data-aos="slide-up"
+        data-aos-delay={100}
+      />
+      <p
+        style={styles.name}
+        data-aos="slide-up"
+        data-aos-delay={100}>
+        {data.name}
+      </p>
       <CustomLink
         href={data.link}
         // width={140}

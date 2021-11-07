@@ -7,6 +7,8 @@ interface Props {
   display?: string;
   style?: any;
   className?: any;
+  animation?: string;
+  animationDelay?: any;
 }
 
 export const Flex: React.FC<Props> = ({
@@ -18,6 +20,8 @@ export const Flex: React.FC<Props> = ({
   display = "flex",
   style,
   className,
+  animation="",
+  animationDelay="50"
 }) => {
   const styles = {
     flex: {
@@ -30,7 +34,11 @@ export const Flex: React.FC<Props> = ({
     },
   };
   return (
-    <div style={styles.flex} className={className ?? null}>
+    <div
+      style={styles.flex}
+      className={className ?? null}
+      data-aos={animation}
+      data-aos-delay={animationDelay}>
       {children}
     </div>
   );

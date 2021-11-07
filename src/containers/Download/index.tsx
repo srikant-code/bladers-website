@@ -41,10 +41,17 @@ export const DownloadBladers = () => {
       <Flex style={styles.flex}>
         <img
           style={styles.mockup}
+          data-aos="slide-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay={50}
           src={DownloadBladersImage}
           alt="Download Bladers from Play Store"></img>
         <Flex flexFlow="column" style={styles.buttonContainer}>
-          <Flex flexFlow="column" style={styles.playstore}>
+          <Flex
+            flexFlow="column"
+            style={styles.playstore}
+            animation="slide-up"
+            animationDelay={100}>
             <p style={styles.text}>Download now</p>
             <CustomLink
               justifyContent="center"
@@ -52,7 +59,11 @@ export const DownloadBladers = () => {
               <Icon icon={ICONS_SVG.playStore} />
             </CustomLink>
           </Flex>
-          <Flex flexFlow="column" style={styles.appstore}>
+          <Flex
+            flexFlow="column"
+            style={styles.appstore}
+            animation="slide-up"
+            animationDelay={150}>
             <p style={styles.text}>Coming Soon</p>
             <CustomLink
               justifyContent="center"

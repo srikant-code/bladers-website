@@ -69,22 +69,23 @@ const Box = ({ topic, date, mouseMove }) => {
       marginLeft: Theme.SPACING(10),
       marginTop: Theme.SPACING(10),
     },
+    card: {
+      width: "100%",
+      cursor: "pointer",
+      marginLeft: ResponsiveEffect({
+        xs: "",
+        sm: "",
+        md: Theme.SPACING(60),
+        lg: Theme.SPACING(60),
+        xl: Theme.SPACING(60),
+      }),
+    },
   };
   return (
     <div
       onMouseEnter={() => mouseMove()}
       className="jouneyCard"
-      style={{
-        width: "100%",
-        cursor: "pointer",
-        marginLeft: ResponsiveEffect({
-          xs: "",
-          sm: "",
-          md: Theme.SPACING(60),
-          lg: Theme.SPACING(60),
-          xl: Theme.SPACING(60),
-        }),
-      }}>
+      style={styles.card}>
       <Flex
         flexFlow="column"
         alignItems={ResponsiveEffect({
@@ -104,43 +105,51 @@ const Box = ({ topic, date, mouseMove }) => {
 };
 
 const ImagesOfJourney = ({ activeImage }) => {
+  const styles = {
+    container: {
+      width: ResponsiveEffect({
+        xs: "100%",
+        sm: "100%",
+        md: "50%",
+        lg: "50%",
+        xl: "50%",
+      }),
+      paddingTop: "2.5rem",
+      paddingBottom: Theme.SPACING(80),
+    },
+    image: {
+      marginRight: ResponsiveEffect({
+        xs: "",
+        sm: "",
+        md: Theme.SPACING(70),
+        lg: Theme.SPACING(110),
+        xl: Theme.SPACING(110),
+      }),
+      boxShadow: "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
+      borderRadius: "12px",
+      border: `${Theme.COLORS.colors.color_1} solid 1px`,
+    },
+  };
   return (
     <Flex
-      style={{
-        width: ResponsiveEffect({
-          xs: "100%",
-          sm: "100%",
-          md: "50%",
-          lg: "50%",
-          xl: "50%",
-        }),
-        paddingTop: "2.5rem",
-        paddingBottom: Theme.SPACING(80),
-      }}
+      style={styles.container}
       justifyContent={ResponsiveEffect({
         xs: "center",
         sm: "center",
         md: "flex-end",
         lg: "flex-end",
         xl: "flex-end",
-      })}>
+      })}
+      animation="slide-up"
+      animationDelay="100">
       <img
         className="animateFromTop"
-        style={{
-          marginRight: ResponsiveEffect({
-            xs: "",
-            sm: "",
-            md: Theme.SPACING(70),
-            lg: Theme.SPACING(110),
-            xl: Theme.SPACING(110),
-          }),
-          boxShadow: "0px 19.6232px 54.2522px 5.77152px rgba(0, 0, 0, 0.75)",
-          borderRadius: "12px",
-          border: `${Theme.COLORS.colors.color_1} solid 1px`,
-        }}
+        style={styles.image}
         src={
           require(`../../assets/images/journey${activeImage + 1}.png`).default
         }
+        data-aos-delay="150"
+        data-aos="slide-up"
         alt={JSON[activeImage].topic}
       />
     </Flex>
@@ -212,7 +221,10 @@ export const OurJourney = () => {
       style={styles.background}
       flexFlow="column"
       justifyContent="flex-start">
-      <div style={{ paddingTop: Theme.SPACING(100) }}>
+      <div
+        style={{ paddingTop: Theme.SPACING(100) }}
+        data-aos-delay="150"
+        data-aos="slide-up">
         <Headline text="OUR JOURNEY" width="8rem" translateX="0px" />
       </div>
       <Flex flexFlow="" alignItems="" style={styles.imageDataContainer}>
@@ -222,7 +234,9 @@ export const OurJourney = () => {
           alignItems="flex-start"
           justifyContent="flex-start"
           className="scrollHiddenContainer"
-          style={styles.dataContainer}>
+          style={styles.dataContainer}
+          animation="slide-up"
+          animationDelay="50">
           {JSON.map((item, i) => {
             return (
               <Box

@@ -61,8 +61,14 @@ export const ScreenshotSlideshow = () => {
 
   return (
     <Flex flexFlow="column">
-      <Headline text="GAME SCREENSHOTS" width="11.8rem" translateX="0" />
-      <div className="slideshow" id="GameScrenshots">
+      <div data-aos="slide-up" data-aos-delay={50}>
+        <Headline text="GAME SCREENSHOTS" width="11.8rem" translateX="0" />
+      </div>
+      <div
+        className="slideshow"
+        id="GameScrenshots"
+        data-aos="slide-up"
+        data-aos-delay={150}>
         <Flex
           flexFlow="row"
           className="slideshowSlider"
@@ -111,11 +117,17 @@ export const ScreenshotSlideshow = () => {
         <div className="slideshowDots">
           {JSON.map((_, idx) => (
             <div
-              key={idx}
-              className={`slideshowDot${index === idx ? " active" : ""}`}
-              onClick={() => {
-                setIndex(idx);
-              }}></div>
+              data-aos="slide-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay={idx * 50}>
+              <div
+                key={idx}
+                className={`slideshowDot${index === idx ? " active" : ""}`}
+                onClick={() => {
+                  setIndex(idx);
+                }}
+              />
+            </div>
           ))}
         </div>
       </div>
